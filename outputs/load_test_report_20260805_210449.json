@@ -1,0 +1,13 @@
+{
+  "total_pesan": 300,
+  "berhasil": 300,
+  "gagal": 0,
+  "success_rate_pct": 100.0,
+  "latency_p50_ms": 487.06,
+  "latency_p95_ms": 1263.54,
+  "latency_p99_ms": 2746.98,
+  "latency_mean_ms": 591.65,
+  "latency_stdev_ms": 418.06,
+  "throughput_pesan_per_menit": 1922.95,
+  "durasi_uji_detik": 9.36
+}

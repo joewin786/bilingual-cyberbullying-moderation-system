@@ -1,0 +1,30 @@
+================================================================================
+STRATIFIED 5-FOLD CROSS-VALIDATION TRANSFORMER COMPARISON
+Tanggal: 2026-07-29 03:20:28
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+  VALIDATION FOLDS RESULTS (mean ± std)
+────────────────────────────────────────────────────────────────────────────────
+Model Name                       Type                   Acc (mean±std)     F1-Macro (mean±std)
+----------------------------------------------------------------------------------------------
+XLM-RoBERTa Base                 Multilingual           0.8380 ± 0.0067   0.8369 ± 0.0067 ★
+IndoBERT Base (IndoBenchmark)    Indonesian Monolingual 0.8311 ± 0.0115   0.8303 ± 0.0112
+mBERT Base (Multilingual)        Multilingual           0.8311 ± 0.0075   0.8299 ± 0.0075
+IndoBERT Uncased (IndoLEM)       Indonesian Monolingual 0.8201 ± 0.0050   0.8180 ± 0.0051
+
+  ★ Best (VALIDATION FOLDS): XLM-RoBERTa Base — F1 Macro: 0.8369 ± 0.0067
+
+────────────────────────────────────────────────────────────────────────────────
+  HELD-OUT TEST SET RESULTS (mean ± std)
+────────────────────────────────────────────────────────────────────────────────
+Model Name                       Type                   Acc (mean±std)     F1-Macro (mean±std)
+----------------------------------------------------------------------------------------------
+XLM-RoBERTa Base                 Multilingual           0.8301 ± 0.0050   0.8287 ± 0.0051 ★
+IndoBERT Base (IndoBenchmark)    Indonesian Monolingual 0.8208 ± 0.0116   0.8195 ± 0.0110
+mBERT Base (Multilingual)        Multilingual           0.8206 ± 0.0049   0.8185 ± 0.0050
+IndoBERT Uncased (IndoLEM)       Indonesian Monolingual 0.8098 ± 0.0057   0.8066 ± 0.0065
+
+  ★ Best (HELD-OUT TEST SET): XLM-RoBERTa Base — F1 Macro: 0.8287 ± 0.0051
+
+================================================================================

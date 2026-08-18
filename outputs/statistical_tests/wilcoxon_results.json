@@ -1,0 +1,184 @@
+{
+  "timestamp": "2026-07-29T22:58:51.181522",
+  "test_type": "Wilcoxon Signed-Rank Test",
+  "metric": "test_f1_macro",
+  "alpha": 0.05,
+  "n_comparisons": 6,
+  "bonferroni_alpha": 0.008333333333333333,
+  "results": [
+    {
+      "model_a": "IndoBERT Base (IndoBenchmark)",
+      "model_b": "IndoBERT Uncased (IndoLEM)",
+      "metric": "test_f1_macro",
+      "scores_a": [
+        0.8214727244180569,
+        0.8241193446591368,
+        0.8303652153348985,
+        0.7983227035754261,
+        0.8233997232690085
+      ],
+      "scores_b": [
+        0.8151640325670497,
+        0.803199053558464,
+        0.8131443948830499,
+        0.8032361877573346,
+        0.7982877162706691
+      ],
+      "mean_a": 0.819536,
+      "mean_b": 0.806606,
+      "mean_difference": 0.01293,
+      "wilcoxon_statistic": 1.0,
+      "p_value": 0.125,
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.008333,
+      "significant_without_correction": false,
+      "significant_with_bonferroni": false,
+      "better_model": "IndoBERT Base (IndoBenchmark)"
+    },
+    {
+      "model_a": "IndoBERT Base (IndoBenchmark)",
+      "model_b": "XLM-RoBERTa Base",
+      "metric": "test_f1_macro",
+      "scores_a": [
+        0.8214727244180569,
+        0.8241193446591368,
+        0.8303652153348985,
+        0.7983227035754261,
+        0.8233997232690085
+      ],
+      "scores_b": [
+        0.8266434233267775,
+        0.8331640537926545,
+        0.8198154023180134,
+        0.8299044190882245,
+        0.8339740279566104
+      ],
+      "mean_a": 0.819536,
+      "mean_b": 0.8287,
+      "mean_difference": -0.009164,
+      "wilcoxon_statistic": 3.0,
+      "p_value": 0.3125,
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.008333,
+      "significant_without_correction": false,
+      "significant_with_bonferroni": false,
+      "better_model": "XLM-RoBERTa Base"
+    },
+    {
+      "model_a": "IndoBERT Base (IndoBenchmark)",
+      "model_b": "mBERT Base (Multilingual)",
+      "metric": "test_f1_macro",
+      "scores_a": [
+        0.8214727244180569,
+        0.8241193446591368,
+        0.8303652153348985,
+        0.7983227035754261,
+        0.8233997232690085
+      ],
+      "scores_b": [
+        0.8147357377986144,
+        0.8137029310847408,
+        0.8194460920191327,
+        0.8276196548144286,
+        0.8172230277297122
+      ],
+      "mean_a": 0.819536,
+      "mean_b": 0.818545,
+      "mean_difference": 0.00099,
+      "wilcoxon_statistic": 5.0,
+      "p_value": 0.625,
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.008333,
+      "significant_without_correction": false,
+      "significant_with_bonferroni": false,
+      "better_model": "IndoBERT Base (IndoBenchmark)"
+    },
+    {
+      "model_a": "IndoBERT Uncased (IndoLEM)",
+      "model_b": "XLM-RoBERTa Base",
+      "metric": "test_f1_macro",
+      "scores_a": [
+        0.8151640325670497,
+        0.803199053558464,
+        0.8131443948830499,
+        0.8032361877573346,
+        0.7982877162706691
+      ],
+      "scores_b": [
+        0.8266434233267775,
+        0.8331640537926545,
+        0.8198154023180134,
+        0.8299044190882245,
+        0.8339740279566104
+      ],
+      "mean_a": 0.806606,
+      "mean_b": 0.8287,
+      "mean_difference": -0.022094,
+      "wilcoxon_statistic": 0.0,
+      "p_value": 0.0625,
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.008333,
+      "significant_without_correction": false,
+      "significant_with_bonferroni": false,
+      "better_model": "XLM-RoBERTa Base"
+    },
+    {
+      "model_a": "IndoBERT Uncased (IndoLEM)",
+      "model_b": "mBERT Base (Multilingual)",
+      "metric": "test_f1_macro",
+      "scores_a": [
+        0.8151640325670497,
+        0.803199053558464,
+        0.8131443948830499,
+        0.8032361877573346,
+        0.7982877162706691
+      ],
+      "scores_b": [
+        0.8147357377986144,
+        0.8137029310847408,
+        0.8194460920191327,
+        0.8276196548144286,
+        0.8172230277297122
+      ],
+      "mean_a": 0.806606,
+      "mean_b": 0.818545,
+      "mean_difference": -0.011939,
+      "wilcoxon_statistic": 1.0,
+      "p_value": 0.125,
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.008333,
+      "significant_without_correction": false,
+      "significant_with_bonferroni": false,
+      "better_model": "mBERT Base (Multilingual)"
+    },
+    {
+      "model_a": "XLM-RoBERTa Base",
+      "model_b": "mBERT Base (Multilingual)",
+      "metric": "test_f1_macro",
+      "scores_a": [
+        0.8266434233267775,
+        0.8331640537926545,
+        0.8198154023180134,
+        0.8299044190882245,
+        0.8339740279566104
+      ],
+      "scores_b": [
+        0.8147357377986144,
+        0.8137029310847408,
+        0.8194460920191327,
+        0.8276196548144286,
+        0.8172230277297122
+      ],
+      "mean_a": 0.8287,
+      "mean_b": 0.818545,
+      "mean_difference": 0.010155,
+      "wilcoxon_statistic": 0.0,
+      "p_value": 0.0625,
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.008333,
+      "significant_without_correction": false,
+      "significant_with_bonferroni": false,
+      "better_model": "XLM-RoBERTa Base"
+    }
+  ]
+}

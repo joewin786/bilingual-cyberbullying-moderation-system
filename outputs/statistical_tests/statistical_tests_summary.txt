@@ -1,0 +1,62 @@
+================================================================================
+HASIL UJI SIGNIFIKANSI STATISTIK — SISTEM DETEKSI CYBERBULLYING
+Tanggal: 2026-07-29 22:59:22
+Tingkat Signifikansi (α): 0.05
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+  1. WILCOXON SIGNED-RANK TEST (Paired K-Fold, Metrik: F1 Macro Test Set)
+     Jumlah perbandingan: 6
+     Koreksi Bonferroni: α = 0.008333
+────────────────────────────────────────────────────────────────────────────────
+
+  Model A                        Model B                          Mean A   Mean B     Diff   W-stat    p-value Keputusan
+  ----------------------------------------------------------------------------------------------------------------------------------
+  IndoBERT Uncased (IndoLEM)     XLM-RoBERTa Base                 0.8066   0.8287  -0.0221      0.0   0.062500 Tidak Sig.
+  XLM-RoBERTa Base               mBERT Base (Multilingual)        0.8287   0.8185  +0.0102      0.0   0.062500 Tidak Sig.
+  IndoBERT Base (IndoBenchmark)  IndoBERT Uncased (IndoLEM)       0.8195   0.8066  +0.0129      1.0   0.125000 Tidak Sig.
+  IndoBERT Uncased (IndoLEM)     mBERT Base (Multilingual)        0.8066   0.8185  -0.0119      1.0   0.125000 Tidak Sig.
+  IndoBERT Base (IndoBenchmark)  XLM-RoBERTa Base                 0.8195   0.8287  -0.0092      3.0   0.312500 Tidak Sig.
+  IndoBERT Base (IndoBenchmark)  mBERT Base (Multilingual)        0.8195   0.8185  +0.0010      5.0   0.625000 Tidak Sig.
+
+  Ringkasan: 0/6 pasangan signifikan (Bonferroni), 0/6 (tanpa koreksi)
+
+  ⚠️ CATATAN PENTING: Dengan K=5 fold, p-value minimum
+     Wilcoxon signed-rank test (two-sided) adalah ~0.0625.
+     Artinya, uji ini TIDAK MUNGKIN mencapai signifikansi
+     pada α=0.05 dengan hanya 5 pasangan data.
+     Hasil Wilcoxon tetap dilaporkan untuk kelengkapan,
+     namun McNemar's test (per-sampel) lebih informatif
+     untuk menentukan signifikansi statistik.
+
+────────────────────────────────────────────────────────────────────────────────
+  2. McNEMAR'S TEST (Per-Sampel pada Held-out Test Set)
+     Jumlah perbandingan: 10
+     Koreksi Bonferroni: α = 0.005000
+────────────────────────────────────────────────────────────────────────────────
+
+  Model A                        Model B                          n12   n21       χ²    p-value Keputusan
+  -------------------------------------------------------------------------------------------------------------------
+  IndoBERT Uncased (IndoLEM)     XLM-RoBERTa (fine-tuned)         112   164     9.42   0.002142 SIGNIFIKAN **
+  XLM-RoBERTa (fine-tuned)       mBERT Base (Multilingual)        181   130     8.04   0.004579 SIGNIFIKAN **
+  IndoBERT Base (IndoBenchmark)  XLM-RoBERTa (fine-tuned)         125   166     5.50   0.019035 Signifikan *
+  XLM-RoBERTa (fine-tuned)       XLM-RoBERTa Base                 104    74     4.72   0.029732 Signifikan *
+  IndoBERT Uncased (IndoLEM)     XLM-RoBERTa Base                 125   147     1.62   0.202907 Tidak Sig.
+  XLM-RoBERTa Base               mBERT Base (Multilingual)        159   138     1.35   0.245838 Tidak Sig.
+  IndoBERT Base (IndoBenchmark)  IndoBERT Uncased (IndoLEM)       133   122     0.39   0.531168 Tidak Sig.
+  IndoBERT Base (IndoBenchmark)  XLM-RoBERTa Base                 134   145     0.36   0.549383 Tidak Sig.
+  IndoBERT Base (IndoBenchmark)  mBERT Base (Multilingual)        165   155     0.25   0.614883 Tidak Sig.
+  IndoBERT Uncased (IndoLEM)     mBERT Base (Multilingual)        151   152     0.00   1.000000 Tidak Sig.
+
+  Ringkasan: 2/10 pasangan signifikan (Bonferroni), 4/10 (tanpa koreksi)
+
+────────────────────────────────────────────────────────────────────────────────
+  KETERANGAN:
+  **  = Signifikan setelah koreksi Bonferroni (klaim kuat)
+  *   = Signifikan tanpa koreksi (klaim lebih lemah)
+  α   = 0.05 (tingkat signifikansi)
+  n12 = Model A benar, Model B salah (discordant pair)
+  n21 = Model A salah, Model B benar (discordant pair)
+  W-stat = Wilcoxon test statistic
+  χ²  = McNemar chi-squared statistic (dengan koreksi kontinuitas)
+================================================================================

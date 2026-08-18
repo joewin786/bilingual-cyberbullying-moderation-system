@@ -1,0 +1,51 @@
+# Environment & Credentials
+.env
+*.env
+!.env.example
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python Cache & Compilation
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Heavy Machine Learning Model Binaries & Checkpoints
+models/*
+!models/.gitkeep
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.onnx
+*.h5
+*.ckpt
+
+# Databases & Runtime Data
+*.db
+*.sqlite3
+discord_bot/violations.db
+
+# Output Logs & Large Test Dumps
+outputs/logs/
+outputs/load_test_raw_*.csv
+outputs/n8n_load_test_raw_*.csv
+scratch/*.csv
+*.log
+
+# IDE & System Files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

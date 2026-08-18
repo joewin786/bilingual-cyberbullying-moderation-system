@@ -1,0 +1,15 @@
+CLASSIFICATION REPORT
+============================================================
+              precision    recall  f1-score   support
+
+   non-bully       0.83      0.51      0.63       206
+       bully       0.67      0.90      0.77       227
+
+    accuracy                           0.72       433
+   macro avg       0.75      0.71      0.70       433
+weighted avg       0.75      0.72      0.71       433
+
+
+Confusion Matrix:
+[[106 100]
+ [ 22 205]]

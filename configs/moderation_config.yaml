@@ -1,0 +1,90 @@
+# ============================================================
+# Moderation Config — Action Mapping per Severity Level
+# Cyberbullying Detection Bot
+# ============================================================
+# Edit file ini untuk menyesuaikan respons bot tanpa perlu
+# mengubah kode Python.
+# ============================================================
+
+# ── Severity Thresholds ──────────────────────────────────────
+# Mapping confidence_bully → severity level
+# Model output: probability bully (0.0 - 1.0)
+severity_thresholds:
+  mild: 0.70       # >= mild → paling rendah yang masih dianggap bullying
+  moderate: 0.80   # >= moderate → perlu tindakan lebih serius
+  severe: 0.92     # >= severe → tindakan tegas, kirim ke mod review
+
+# ── Action Mapping per Severity ──────────────────────────────
+# action options: "none", "warn", "timeout", "kick", "ban"
+# require_mod_approval: true → tunggu persetujuan mod sebelum eksekusi
+actions:
+  # Mild: Peringatan via DM, tidak ada hukuman
+  mild:
+    action: "warn"
+    dm: true
+    dm_message: |
+      ⚠️ **Peringatan Cyberbullying — {guild_name}**
+
+      Pesan kamu terdeteksi mengandung konten yang mungkin menyinggung (*mild*).
+      Pesan telah dihapus.
+
+      Jika ini keliru, gunakan `/appeal` di server.
+    send_to_mod_channel: false
+
+  # Moderate: Timeout singkat + DM
+  moderate:
+    action: "timeout"
+    duration_minutes: 30       # ← Ganti durasi timeout sesuai kebutuhan
+    dm: true
+    dm_message: |
+      🔇 **Kamu di-Timeout di {guild_name}**
+
+      Pesan kamu dihapus karena cyberbullying tingkat **sedang** (*moderate*).
+      Kamu di-timeout selama **{duration}**.
+
+      Jika ini keliru, gunakan `/appeal`.
+    send_to_mod_channel: true
+
+  # Severe: Timeout panjang + wajib review mod
+  severe:
+    action: "timeout"
+    duration_minutes: 480      # 8 jam ← Ganti sesuai kebutuhan
+    dm: true
+    dm_message: |
+      🚫 **Tindakan Keras di {guild_name}**
+
+      Pesan kamu mengandung cyberbullying tingkat **parah** (*severe*) dan
+      telah dihapus. Kamu di-timeout selama **{duration}**.
+
+      Kasus kamu sedang ditinjau oleh moderator.
+      Gunakan `/appeal` jika kamu merasa ini keliru.
+    send_to_mod_channel: true
+    require_mod_approval: false   # false = eksekusi langsung, kirim notif ke mod
+                                  # true  = tahan, tunggu mod approve dulu
+
+# ── Mod Review Channel Config ─────────────────────────────────
+mod_review:
+  # Kirim ke mod channel jika confidence ada di zona abu-abu ini
+  # (tanpa eksekusi tindakan otomatis)
+  low_confidence_threshold: 0.75    # confidence bully di bawah ini + tier=flag → review
+
+  # Severity yang SELALU dikirim ke mod channel (di luar tindakan otomatis)
+  always_notify_severity: ["severe"]
+
+  # Apakah bot menambahkan tombol Approve/Reject interaktif di embed mod channel
+  interactive_buttons: true
+
+# ── Violation Escalation ──────────────────────────────────────
+# Eskalasi tindakan berdasarkan jumlah pelanggaran kumulatif
+escalation:
+  enabled: true
+  # Format: [violation_count_min, action_override]
+  # Jika violation >= min → override action dengan yang di bawah
+  rules:
+    - min_violations: 1
+      action_override: null      # gunakan action dari severity_actions
+    - min_violations: 3
+      action_override: "timeout"
+      duration_minutes: 1440     # 24 jam untuk pelanggar berulang (≥3x)
+    - min_violations: 5
+      action_override: "kick"    # 5x pelanggaran → kick

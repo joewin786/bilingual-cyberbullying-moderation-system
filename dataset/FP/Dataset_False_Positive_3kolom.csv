@@ -1,0 +1,501 @@
+text,label,category
+saya lihat babi hutan berlari di kebun,0,animal_literal
+monyet itu melompat dari satu pohon ke pohon lain,0,animal_literal
+anjing itu menggonggong semalaman,0,animal_literal
+kucing saya takut sama anjing tetangga,0,animal_literal
+babi hutan sering masuk ke ladang warga,0,animal_literal
+monyet di kebun binatang itu lucu sekali,0,animal_literal
+anjing peliharaan saya suka main bola,0,pet_context
+babi itu hewan yang hidup di lumpur,0,animal_literal
+monyet termasuk hewan primata,0,animal_literal
+anjing saya tidur di depan pintu,0,pet_context
+saya kasih makan anjing saya pagi tadi,0,pet_context
+monyet kecil itu digendong induknya,0,animal_literal
+babi ternak itu dipelihara di kandang belakang,0,animal_literal
+anjing kampung itu sering ikut lari pagi,0,pet_context
+suara anjing tadi malam keras sekali,0,pet_context
+film ini jelek alurnya tapi sinematografinya bagus,0,object_criticism
+video ini jelek kualitas audionya,0,object_criticism
+desain posternya norak menurut saya,0,object_criticism
+"bajunya kelihatan kampungan, tapi mungkin memang konsepnya begitu",0,object_criticism
+warna tembok ini jelek kalau dipadukan dengan lampu kuning,0,object_criticism
+"editan videonya norak sekali, terlalu banyak efek",0,object_criticism
+cover bukunya jelek tapi isi tulisannya bagus,0,object_criticism
+model tas itu menurut saya kampungan,0,object_criticism
+interior ruangan ini terlihat norak karena terlalu ramai,0,object_criticism
+sepatu itu jelek bentuknya menurut saya,0,object_criticism
+desain logonya terlalu norak untuk brand premium,0,object_criticism
+"film horor itu jelek, saya bosan menontonnya",0,object_criticism
+iklan ini aneh konsepnya tapi lumayan menarik,0,object_criticism
+warna cat rumah itu terlalu mencolok dan terkesan norak,0,object_criticism
+layout presentasinya jelek dan tidak rapi,0,object_criticism
+"anjing, kaget banget gue tadi",0,general_expression
+"anjir, ternyata jadwalnya diubah",0,general_expression
+"gila, cepat banget larinya",0,general_expression
+"parah, hujannya deras banget hari ini",0,general_expression
+"buset, rame banget jalanan pagi ini",0,general_expression
+"kampret, aku lupa bawa dompet",0,general_expression
+"bangsat, file-nya belum ke-save",1,self_directed_expression
+"goblok, aku salah kirim file lagi",0,self_directed_expression
+"tolol banget aku, lupa naruh kunci",0,self_directed_expression
+"bodoh banget saya tadi, salah belok",0,self_directed_expression
+"anjing, sakit juga jatuh dari tangga",0,self_directed_expression
+"sial, aku keteledoran lagi",0,self_directed_expression
+"kampret, charger-ku ketinggalan",0,self_directed_expression
+gobloknya aku gak cek dulu sebelum submit,0,self_directed_expression
+"bego banget gue, salah jadwal",0,self_directed_expression
+"anjir, ternyata mahal juga ya",0,general_expression
+"parah sih cuacanya, bikin malas keluar",0,general_expression
+gila sih pemandangannya bagus banget,0,general_expression
+"buset, tinggi banget gedung itu",0,general_expression
+anjing itu hewan yang sangat setia,0,quoted_or_descriptive
+babi termasuk mamalia omnivora,0,quoted_or_descriptive
+monyet sering dijadikan objek penelitian perilaku primata,0,quoted_or_descriptive
+kata 'anjing' sering muncul dalam percakapan informal,0,quoted_or_descriptive
+"kata 'babi' dalam konteks ini merujuk pada hewan, bukan hinaan",0,quoted_or_descriptive
+kata 'monyet' bisa bermakna literal jika sedang membahas hewan,0,quoted_or_descriptive
+dalam berita itu disebutkan ada serangan babi hutan ke kebun warga,0,news_or_public_issue
+berita hari ini membahas populasi monyet liar di permukiman,0,news_or_public_issue
+warga mengeluhkan anjing liar yang berkeliaran di jalan,0,news_or_public_issue
+petani rugi karena babi hutan merusak tanaman mereka,0,news_or_public_issue
+video dokumenter itu membahas kehidupan monyet di hutan,0,news_or_public_issue
+artikel itu menjelaskan cara merawat anjing peliharaan,0,news_or_public_issue
+"poster itu terlihat norak, tapi mungkin target pasarnya anak muda",0,object_criticism
+menurut saya desain panggungnya terlalu ramai dan terkesan kampungan,0,object_criticism
+dekorasi acara itu kelihatan berlebihan dan agak norak,0,object_criticism
+"bentuk kursinya aneh, tapi tetap nyaman dipakai",0,object_criticism
+"cover album ini jelek, untung lagunya bagus",0,object_criticism
+warna mobil itu terlalu mencolok buat selera saya,0,object_criticism
+aku merasa penampilanku jelek di foto itu,0,self_directed_expression
+hari ini mukaku jelek banget karena kurang tidur,0,self_directed_expression
+aku kelihatan berantakan banget habis kehujanan,0,self_directed_expression
+rambutku norak banget kalau kena angin,0,self_directed_expression
+foto ini bikin aku kelihatan aneh,0,self_directed_expression
+bajuku kelihatan kampungan kalau dipakai dengan sandal itu,0,self_directed_expression
+rumah itu disebut mirip kandang karena desainnya sangat sederhana,0,figurative_non_targeted
+jalanan kota ini seperti hutan karena terlalu ramai dan semrawut,0,figurative_non_targeted
+suasana rapat tadi seperti kebun binatang karena semua bicara bersamaan,0,figurative_non_targeted
+kelas tadi ramai sekali sampai terasa seperti pasar,0,figurative_non_targeted
+tempat itu bau sekali seperti kandang hewan,0,figurative_non_targeted
+debat tadi liar banget sampai seperti hutan belantara,0,figurative_non_targeted
+'makan nasi padang aja begini badannya' itu dikutip dari komentar warganet,0,quoted_or_descriptive
+'hapus aja ni poto' adalah contoh komentar yang sedang dianalisis,0,quoted_or_descriptive
+"peneliti mengumpulkan kata seperti anjing, babi, dan monyet untuk studi bahasa kasar",0,quoted_or_descriptive
+dalam dataset ini ada contoh kata kasar yang tidak selalu berarti bullying,0,quoted_or_descriptive
+"kalimat itu hanya contoh linguistik, bukan serangan ke seseorang",0,quoted_or_descriptive
+komentar tersebut dibahas sebagai bagian dari penelitian media sosial,0,quoted_or_descriptive
+anjing laut hidup di daerah dingin,0,animal_literal
+babi rusa adalah hewan endemik Indonesia,0,animal_literal
+monyet ekor panjang banyak ditemukan di hutan tropis,0,animal_literal
+anjing penjaga itu sangat aktif malam hari,0,pet_context
+babi ternak perlu kandang yang bersih,0,animal_literal
+monyet itu mengambil pisang dari tangan penjaga,0,animal_literal
+cokelat berbahaya untuk anjing peliharaan,0,pet_context
+makanan itu tidak boleh diberikan ke anjing,0,pet_context
+vaksin rabies penting untuk anjing dan kucing,0,pet_context
+anak itu senang melihat monyet di taman safari,0,animal_literal
+"""anjing tetangga itu selalu duduk di depan pagar""",0,pet_context
+"""saya melihat monyet mengambil makanan wisatawan""",0,animal_literal
+"""babi peliharaan itu sedang tidur di kandang""",0,animal_literal
+"""anjing penjaga rumah itu sangat jinak""",0,pet_context
+"""monyet liar itu turun ke atap rumah warga""",0,animal_literal
+"""babi hutan sering muncul saat musim panen""",0,animal_literal
+"""anjing kecil itu menggigit sandal saya""",0,pet_context
+"""monyet di video itu terlihat sangat aktif""",0,animal_literal
+"""babi ternak perlu pakan yang cukup setiap hari""",0,animal_literal
+"""anjing saya suka berlari di halaman belakang""",0,pet_context
+"""warna baju ini terlalu norak untuk acara formal""",0,object_criticism
+"""poster konsernya kelihatan kampungan menurut saya""",0,object_criticism
+"""desain kemasannya jelek dan kurang menarik""",0,object_criticism
+"""tampilan aplikasinya aneh tapi fungsinya bagus""",0,object_criticism
+"""dekorasinya terlalu ramai dan terlihat norak""",0,object_criticism
+"""logo lama itu menurut saya jelek untuk brand besar""",0,object_criticism
+"""iklan itu terasa kampungan karena terlalu berlebihan""",0,object_criticism
+"""warna sofa ini aneh kalau dipadukan dengan dinding""",0,object_criticism
+"""desain bajunya norak tapi bahan kainnya nyaman""",0,object_criticism
+"""judul videonya aneh banget tapi isinya informatif""",0,object_criticism
+"""anjing, listrik mati lagi""",0,general_expression
+"""anjir, kok mendadak hujan deras""",0,general_expression
+"""kampret, tiketnya habis duluan""",0,general_expression
+"""gila, pemandangannya keren banget""",0,general_expression
+"""buset, besar banget gedung itu""",0,general_expression
+"""parah, macetnya panjang sekali""",0,general_expression
+"""bangsat, lupa simpan dokumen tadi""",1,self_directed_expression
+"""goblok, aku salah kirim pesan ke grup""",0,self_directed_expression
+"""bego banget aku tadi gak baca instruksinya""",0,self_directed_expression
+"""tolol banget saya lupa bawa kartu identitas""",0,self_directed_expression
+"""anjing, kaki saya kejedot meja""",0,self_directed_expression
+"""kampret, kuncinya tertinggal di rumah""",0,self_directed_expression
+"""kata anjing dalam konteks ini merujuk pada hewan peliharaan""",0,quoted_or_descriptive
+"""kata babi di kalimat itu dipakai secara literal""",0,quoted_or_descriptive
+"""kata monyet di paragraf ini menjelaskan spesies primata""",0,quoted_or_descriptive
+"""istilah kampungan pada artikel itu dipakai untuk gaya desain""",0,quoted_or_descriptive
+"""kata norak pada ulasan ini ditujukan pada dekorasi ruangan""",0,quoted_or_descriptive
+"""frasa jelek di sini merujuk pada kualitas gambar""",0,quoted_or_descriptive
+"""berita itu membahas serangan babi hutan di desa""",0,news_or_public_issue
+"""laporan warga menyebutkan ada monyet masuk permukiman""",0,news_or_public_issue
+"""artikel tersebut membahas vaksin rabies untuk anjing""",0,news_or_public_issue
+"""program konservasi itu meneliti perilaku monyet liar""",0,news_or_public_issue
+"""warga mengeluhkan suara anjing liar saat malam""",0,news_or_public_issue
+"""berita lokal menuliskan kerusakan kebun akibat babi hutan""",0,news_or_public_issue
+"""aku merasa fotoku jelek karena pencahayaannya buruk""",0,self_directed_expression
+"""hari ini wajahku kelihatan aneh di kamera depan""",0,self_directed_expression
+"""rambutku berantakan banget habis naik motor""",0,self_directed_expression
+"""bajuku kelihatan norak kalau dipadukan dengan tas ini""",0,self_directed_expression
+"""aku tampak capek banget di foto tadi""",0,self_directed_expression
+"""sepatuku kelihatan aneh dipakai dengan celana ini""",0,self_directed_expression
+"""ruangan itu seperti kandang karena terlalu sempit""",0,figurative_non_targeted
+"""rapat tadi seperti pasar karena semua bicara bersamaan""",0,figurative_non_targeted
+"""suasana kelas ramai sekali seperti kebun binatang""",0,figurative_non_targeted
+"""jalanan kota pagi ini seperti lautan manusia""",0,figurative_non_targeted
+"""tempat itu berantakan seperti kapal pecah""",0,figurative_non_targeted
+"""antrian di loket seperti tidak ada ujungnya""",0,figurative_non_targeted
+"""anjing laut hidup di wilayah bersuhu dingin""",0,animal_literal
+"""monyet ekor panjang banyak ditemukan di Asia Tenggara""",0,animal_literal
+"""babi rusa merupakan satwa khas Sulawesi""",0,animal_literal
+"""anjing golden retriever dikenal ramah pada manusia""",0,quoted_or_descriptive
+"""monyet sering digunakan dalam studi perilaku hewan""",0,quoted_or_descriptive
+"""babi termasuk hewan omnivora""",0,quoted_or_descriptive
+"""suara anjing dari rumah sebelah terdengar sejak subuh""",0,pet_context
+"""monyet itu duduk di atas pagar rumah""",0,animal_literal
+"""babi kecil itu bermain di lumpur""",0,animal_literal
+"""anjing putih itu tidur di teras rumah""",0,pet_context
+"""monyet itu mencuri buah dari kebun warga""",0,animal_literal
+"""babi ternak itu dipindahkan ke kandang baru""",0,animal_literal
+"""film itu jelek menurut saya karena endingnya terburu-buru""",0,object_criticism
+"""lagu ini aneh aransemennya tapi liriknya bagus""",0,object_criticism
+"""cover majalah itu terlalu norak untuk selera saya""",0,object_criticism
+"""dekorasi tokonya terkesan kampungan dan terlalu penuh""",0,object_criticism
+"""desain website lama itu jelek dan sulit dibaca""",0,object_criticism
+"""warna furniturnya terlihat aneh di ruangan kecil""",0,object_criticism
+"""anjir, cepat banget waktu berjalannya""",0,general_expression
+"""gila, tinggi banget ombaknya""",0,general_expression
+"""parah, tugasnya banyak banget minggu ini""",0,general_expression
+"""buset, mahal juga harga tiketnya""",0,general_expression
+"""kampret, aku terlambat bangun""",0,self_directed_expression
+"""bangsat, charger laptopku rusak""",1,self_directed_expression
+"""goblok, kenapa aku gak cek ulang tadi""",0,self_directed_expression
+"""bego banget gue lupa update aplikasi""",0,self_directed_expression
+"""tolol banget aku naruh kacamata sendiri terus lupa""",0,self_directed_expression
+"""anjing, dompetku jatuh di jalan tadi""",0,self_directed_expression
+"""kata jelek pada ulasan ini merujuk pada kualitas produk""",0,quoted_or_descriptive
+"""kata norak dalam tulisan itu dipakai untuk gaya busana""",0,quoted_or_descriptive
+"""kata kampungan pada konteks ini mengacu pada dekorasi acara""",0,quoted_or_descriptive
+"""istilah aneh dipakai untuk menggambarkan desain bangunan""",0,quoted_or_descriptive
+"""frasa terlalu ramai di sini menilai tata letak ruangan""",0,quoted_or_descriptive
+"""komentar tersebut sedang dibahas dalam penelitian bahasa daring""",0,quoted_or_descriptive
+"""warga desa memasang pagar untuk menghalau babi hutan""",0,news_or_public_issue
+"""tim peneliti mengamati monyet di kawasan hutan kota""",0,news_or_public_issue
+"""petugas mengevakuasi anjing liar dari jalan utama""",0,news_or_public_issue
+"""artikel kesehatan membahas makanan berbahaya untuk anjing""",0,news_or_public_issue
+"""berita siang ini menyoroti konflik warga dengan monyet liar""",0,news_or_public_issue
+"""laporan pertanian menyebutkan serangan babi hutan meningkat""",0,news_or_public_issue
+"""aku kelihatan jelek di foto karena salah angle""",0,self_directed_expression
+"""mukaku aneh banget kalau pakai filter ini""",0,self_directed_expression
+"""rambutku kelihatan norak kalau diikat seperti ini""",0,self_directed_expression
+"""bajuku terasa kampungan kalau dipakai ke acara resmi""",0,self_directed_expression
+"""aku tampak pucat dan gak enak dilihat karena sakit""",0,self_directed_expression
+"""sepatu ini bikin gayaku kelihatan aneh""",0,self_directed_expression
+"""anjing itu duduk diam di bawah meja""",0,pet_context
+"""monyet kecil itu makan pisang di kandang""",0,animal_literal
+"""babi hutan terlihat melintas di pinggir sawah""",0,animal_literal
+"""anjing peliharaan kami baru selesai dimandikan""",0,pet_context
+"""monyet itu memegang botol air milik pengunjung""",0,animal_literal
+"""babi ternak itu sedang diberi makan jagung""",0,animal_literal
+"""anjing penjaga itu tidur dekat gerbang""",0,pet_context
+"""monyet liar itu naik ke pohon mangga""",0,animal_literal
+"""babi hutan merusak tanaman singkong warga""",0,news_or_public_issue
+"""anjing saya suka mengejar kupu-kupu di taman""",0,pet_context
+"""warna kaos ini terlalu norak untuk acara kantor""",0,object_criticism
+"""dekorasi panggungnya kelihatan kampungan menurutku""",0,object_criticism
+"""desain brosur itu jelek tapi informasinya lengkap""",0,object_criticism
+"""tampilan slide ini aneh karena kebanyakan warna""",0,object_criticism
+"""kursi itu bentuknya jelek tapi lumayan nyaman""",0,object_criticism
+"""banner promonya terlalu ramai dan terkesan norak""",0,object_criticism
+"""model sepatu itu kelihatan kampungan buat seleraku""",0,object_criticism
+"""font pada poster ini jelek untuk dibaca""",0,object_criticism
+"""layout websitenya aneh tapi tetap bisa dipakai""",0,object_criticism
+"""warna cat itu terlalu mencolok dan terasa norak""",0,object_criticism
+"""anjing, ternyata file yang benar ada di folder lain""",0,general_expression
+"""anjir, lupa kalau hari ini libur nasional""",0,general_expression
+"""gila, panjang banget antreannya""",0,general_expression
+"""parah, panasnya luar biasa siang ini""",0,general_expression
+"""buset, cepat sekali dia sampai""",0,general_expression
+"""kampret, aku salah naik lift lagi""",0,self_directed_expression
+"""bangsat, kenapa aku lupa simpan revisinya""",1,self_directed_expression
+"""goblok, aku malah kirim draft yang lama""",0,self_directed_expression
+"""bego banget aku baru sadar sekarang""",0,self_directed_expression
+"""tolol banget gue naruh HP sendiri terus panik""",0,self_directed_expression
+"""kata anjing di kalimat ini bukan ditujukan ke seseorang""",0,quoted_or_descriptive
+"""istilah babi pada paragraf tersebut merujuk pada hewan liar""",0,quoted_or_descriptive
+"""kata monyet di sini digunakan dalam konteks zoologi""",0,quoted_or_descriptive
+"""kata kampungan dalam ulasan itu membahas gaya dekorasi""",0,quoted_or_descriptive
+"""kata norak pada komentar tersebut menilai desain pakaian""",0,quoted_or_descriptive
+"""frasa jelek dalam deskripsi ini mengacu pada kualitas video""",0,quoted_or_descriptive
+"""berita malam itu menyoroti gangguan monyet liar di kota""",0,news_or_public_issue
+"""artikel itu membahas vaksinasi untuk anjing peliharaan""",0,news_or_public_issue
+"""laporan warga mencatat babi hutan masuk area kebun""",0,news_or_public_issue
+"""tim konservasi meneliti perilaku monyet ekor panjang""",0,news_or_public_issue
+"""anjing liar diamankan petugas dari area pasar""",0,news_or_public_issue
+"""babi hutan menjadi ancaman bagi tanaman jagung petani""",0,news_or_public_issue
+"""aku kelihatan jelek di foto karena lampunya redup""",0,self_directed_expression
+"""mukaku aneh karena kameranya terlalu dekat""",0,self_directed_expression
+"""rambutku kelihatan norak kalau disisir ke belakang""",0,self_directed_expression
+"""bajuku terlihat kampungan kalau dipadukan dengan jaket ini""",0,self_directed_expression
+"""aku tampak capek sekali di hasil rekaman tadi""",0,self_directed_expression
+"""sepatu ini bikin penampilanku terlihat aneh""",0,self_directed_expression
+"""ruangan rapat itu seperti pasar karena sangat bising""",0,figurative_non_targeted
+"""kelas tadi seperti kebun binatang karena semua bergerak""",0,figurative_non_targeted
+"""meja kerja ini berantakan seperti kapal pecah""",0,figurative_non_targeted
+"""jalanan kota terasa seperti lautan kendaraan""",0,figurative_non_targeted
+"""suasana stadion tadi seperti mendidih karena terlalu ramai""",0,figurative_non_targeted
+"""debat itu liar seperti hutan tanpa aturan""",0,figurative_non_targeted
+"""anjing itu menggigit mainannya sendiri""",0,pet_context
+"""monyet tersebut duduk di dahan paling tinggi""",0,animal_literal
+"""babi kecil itu berlari mengelilingi kandang""",0,animal_literal
+"""anjing tetangga sedang memakai kalung baru""",0,pet_context
+"""monyet liar itu mengambil roti dari meja""",0,animal_literal
+"""babi hutan meninggalkan jejak di kebun belakang""",0,animal_literal
+"""anjing pelacak itu sedang dilatih petugas""",0,pet_context
+"""monyet di taman safari tampak sehat""",0,animal_literal
+"""babi ternak itu baru dipindahkan pagi ini""",0,animal_literal
+"""anjing saya tidur sambil memeluk boneka""",0,pet_context
+"""cover bukunya jelek tapi isi penelitiannya bagus""",0,object_criticism
+"""desain stiker itu norak untuk produk premium""",0,object_criticism
+"""dekorasi aula terlihat kampungan dan terlalu ramai""",0,object_criticism
+"""warna tas ini aneh kalau dipakai siang hari""",0,object_criticism
+"""konsep videonya jelek tapi editingnya rapi""",0,object_criticism
+"""bentuk logo lama itu terasa kampungan""",0,object_criticism
+"""iklan ini norak tapi lumayan gampang diingat""",0,object_criticism
+"""kemasan produknya jelek dan kurang modern""",0,object_criticism
+"""gaya poster ini aneh untuk acara ilmiah""",0,object_criticism
+"""judul film itu jelek tapi jalan ceritanya menarik""",0,object_criticism
+"""anjir, ternyata laptopnya belum dicas""",0,general_expression
+"""gila, cepat banget hasil cetaknya keluar""",0,general_expression
+"""parah, hujan anginnya bikin takut""",0,general_expression
+"""buset, banyak juga yang datang""",0,general_expression
+"""kampret, aku salah masuk kelas""",0,self_directed_expression
+"""bangsat, aku malah lupa password sendiri""",1,self_directed_expression
+"""goblok, harusnya aku baca dulu petunjuknya""",0,self_directed_expression
+"""bego banget gue baru sadar file-nya corrupt""",0,self_directed_expression
+"""tolol banget aku naruh buku di kulkas""",0,self_directed_expression
+"""anjing, ternyata dompetku ada di tas lain""",0,self_directed_expression
+"""kata jelek di sini digunakan untuk menilai kualitas gambar""",0,quoted_or_descriptive
+"""istilah norak pada ulasan ini membahas dekorasi panggung""",0,quoted_or_descriptive
+"""kata kampungan dalam artikel itu merujuk pada gaya interior""",0,quoted_or_descriptive
+"""kata aneh dipakai untuk menjelaskan bentuk furnitur""",0,quoted_or_descriptive
+"""kata monyet di laporan itu jelas merujuk pada satwa liar""",0,quoted_or_descriptive
+"""kata babi dalam konteks ini bukan sebuah hinaan""",0,quoted_or_descriptive
+"""berita itu mengabarkan populasi monyet di area wisata""",0,news_or_public_issue
+"""laporan pertanian menuliskan kerusakan oleh babi hutan""",0,news_or_public_issue
+"""artikel kesehatan hewan membahas rabies pada anjing""",0,news_or_public_issue
+"""warga meminta penanganan anjing liar di permukiman""",0,news_or_public_issue
+"""petugas memantau monyet yang turun ke rumah warga""",0,news_or_public_issue
+"""tim konservasi mengevakuasi babi hutan dari jalan raya""",0,news_or_public_issue
+"""aku kelihatan aneh di video call karena sudut kameranya""",0,self_directed_expression
+"""fotoku jelek karena pencahayaan dari bawah""",0,self_directed_expression
+"""rambutku kelihatan kampungan kalau pakai jepit ini""",0,self_directed_expression
+"""makeup-ku jadi terlalu norak di lampu terang""",0,self_directed_expression
+"""jaket ini bikin aku terlihat aneh di cermin""",0,self_directed_expression
+"""sepatu lama itu bikin gayaku jelek""",0,self_directed_expression
+"""ruangan itu sesak seperti kandang penuh""",0,figurative_non_targeted
+"""suasana terminal tadi seperti pasar malam""",0,figurative_non_targeted
+"""kelas tersebut ramai seperti stadion kecil""",0,figurative_non_targeted
+"""diskusi itu melebar seperti tidak ada ujung""",0,figurative_non_targeted
+"""jalan ini macet seperti parkiran raksasa""",0,figurative_non_targeted
+"""antrian tadi bergerak lambat seperti siput""",0,figurative_non_targeted
+"""anjing peliharaan itu suka duduk dekat jendela""",0,pet_context
+"""monyet kecil itu mengupas pisang sendiri""",0,animal_literal
+"""babi hutan itu menyeberang dekat sungai""",0,animal_literal
+"""anjing tetangga memakai sweater biru""",0,pet_context
+"""monyet di kebun binatang itu sedang tidur""",0,animal_literal
+"""babi ternak itu dipelihara untuk penelitian""",0,animal_literal
+"""anjing penjaga itu menggonggong saat ada tamu""",0,pet_context
+"""monyet itu bergelantungan dengan ekornya""",0,animal_literal
+"""babi liar itu terlihat dari kejauhan""",0,animal_literal
+"""anjing saya suka mengejar bayangannya sendiri""",0,pet_context
+"""dekorasi pernikahan itu terlalu norak buat saya""",0,object_criticism
+"""poster seminar ini jelek karena terlalu padat tulisan""",0,object_criticism
+"""warna dinding itu terasa kampungan di ruangan modern""",0,object_criticism
+"""model topi ini aneh tapi unik""",0,object_criticism
+"""desain undangan lama itu jelek dan kurang elegan""",0,object_criticism
+"""konsep stand bazarnya agak norak tapi ramai""",0,object_criticism
+"""bentuk lampunya aneh untuk ruang baca""",0,object_criticism
+"""layout majalah itu kampungan menurut dosen desain""",0,object_criticism
+"""warna sepeda ini jelek tapi rangkanya kuat""",0,object_criticism
+"""iklan banner itu terlihat murahan dan norak""",0,object_criticism
+"""anjir, ternyata rapatnya dimajukan""",0,general_expression
+"""gila, lebar juga jalannya""",0,general_expression
+"""parah, tugas revisinya banyak sekali""",0,general_expression
+"""buset, terang banget lampunya""",0,general_expression
+"""kampret, aku salah kirim lampiran""",0,self_directed_expression
+"""bangsat, aku tadi lupa upload file akhir""",1,self_directed_expression
+"""goblok, kenapa aku gak cek ukuran dulu""",0,self_directed_expression
+"""bego banget gue malah salah buka presentasi""",0,self_directed_expression
+"""tolol banget aku kirain hari ini Jumat""",0,self_directed_expression
+"""anjing, jari saya kejepit pintu""",0,self_directed_expression
+"""dalam contoh ini kata anjing hanyalah interjeksi""",0,quoted_or_descriptive
+"""dalam laporan itu kata monyet dipakai secara ilmiah""",0,quoted_or_descriptive
+"""kata babi muncul pada berita tentang satwa liar""",0,quoted_or_descriptive
+"""istilah jelek dalam ulasan ini merujuk ke desain aplikasi""",0,quoted_or_descriptive
+"""kata norak di artikel mode itu membahas warna pakaian""",0,quoted_or_descriptive
+"""istilah kampungan dalam tulisan ini tidak diarahkan ke orang""",0,quoted_or_descriptive
+"""berita pagi membahas serangan babi hutan ke ladang""",0,news_or_public_issue
+"""laporan kebun binatang menyebut monyet baru lahir""",0,news_or_public_issue
+"""program vaksin gratis untuk anjing digelar akhir pekan""",0,news_or_public_issue
+"""warga melaporkan monyet memasuki dapur rumah""",0,news_or_public_issue
+"""petani memasang perangkap untuk babi hutan""",0,news_or_public_issue
+"""anjing liar di terminal dipindahkan ke penampungan""",0,news_or_public_issue
+"""aku merasa wajahku jelek karena belum tidur cukup""",0,self_directed_expression
+"""mukaku kelihatan aneh kalau pakai kamera belakang""",0,self_directed_expression
+"""bajuku terasa norak saat dipadukan dengan celana ini""",0,self_directed_expression
+"""penampilanku kelihatan kampungan di foto lama""",0,self_directed_expression
+"""rambutku jelek banget setelah kehujanan""",0,self_directed_expression
+"""aku tampak pucat dan aneh di video tadi""",0,self_directed_expression
+"""suasana ruang tunggu seperti kapal pecah""",0,figurative_non_targeted
+"""diskusi tadi seperti putaran tanpa ujung""",0,figurative_non_targeted
+"""kelas mendadak seperti pasar karena semua ribut""",0,figurative_non_targeted
+"""rapat itu terasa seperti maraton tanpa henti""",0,figurative_non_targeted
+"""tempat ini sempit seperti kotak""",0,figurative_non_targeted
+"""jalan pulang macet seperti parkiran total""",0,figurative_non_targeted
+"""anjing golden retriever dikenal ramah""",0,quoted_or_descriptive
+"""monyet termasuk kelompok primata""",0,quoted_or_descriptive
+"""babi dapat hidup di lingkungan lembap""",0,quoted_or_descriptive
+"""anjing laut bukan anjing peliharaan""",0,quoted_or_descriptive
+"""monyet ekor panjang sering ditemukan di kawasan tropis""",0,quoted_or_descriptive
+"""babi rusa merupakan satwa unik Indonesia""",0,quoted_or_descriptive
+"""anjing itu mengejar bola merah""",0,pet_context
+"""monyet kecil itu menarik daun dari ranting""",0,animal_literal
+"""babi hutan itu bersembunyi di semak""",0,animal_literal
+"""anjing penjaga itu berada di pos depan""",0,pet_context
+"""monyet itu memegang botol plastik""",0,animal_literal
+"""babi ternak itu sedang diperiksa dokter hewan""",0,animal_literal
+"""anjing saya senang bermain di halaman depan""",0,pet_context
+"""monyet itu melompat ke tembok belakang""",0,animal_literal
+"""babi hutan turun saat malam hari""",0,animal_literal
+"""anjing kecil itu menggonggong ke arah sepeda""",0,pet_context
+"""warna panggungnya terlalu norak buat acara ilmiah""",0,object_criticism
+"""desain brosur lama itu kampungan dan terlalu penuh""",0,object_criticism
+"""konsep poster ini jelek karena tidak fokus""",0,object_criticism
+"""bentuk meja itu aneh tapi cukup kuat""",0,object_criticism
+"""layout feed ini terasa norak dan berlebihan""",0,object_criticism
+"""warna jaket itu agak kampungan menurutku""",0,object_criticism
+"""kemasan lama terlihat jelek di etalase""",0,object_criticism
+"""desain interior itu aneh tapi tetap menarik""",0,object_criticism
+"""spanduk ini norak tapi pesannya jelas""",0,object_criticism
+"""model sandal itu jelek tapi nyaman dipakai""",0,object_criticism
+"""anjir, ternyata aku salah baca tanggal""",0,general_expression
+"""gila, dingin banget ruangan ini""",0,general_expression
+"""parah, koneksinya lambat sekali""",0,general_expression
+"""buset, tinggi sekali tangganya""",0,general_expression
+"""kampret, aku lupa bawa flashdisk""",0,self_directed_expression
+"""bangsat, aku belum print dokumennya""",1,self_directed_expression
+"""goblok, aku salah pilih file lagi""",0,self_directed_expression
+"""bego banget gue kirain itu ruang dosen""",0,self_directed_expression
+"""tolol banget aku malah salah parkir""",0,self_directed_expression
+"""anjing, kok bisa kepencet delete""",0,self_directed_expression
+"""kata kampungan di sini dipakai untuk desain rumah""",0,quoted_or_descriptive
+"""kata norak pada review itu membahas warna dekorasi""",0,quoted_or_descriptive
+"""kata jelek di artikel ini tidak menyerang orang""",0,quoted_or_descriptive
+"""kata aneh dalam kalimat itu menjelaskan bentuk benda""",0,quoted_or_descriptive
+"""kata monyet pada teks ini merujuk pada hewan di hutan""",0,quoted_or_descriptive
+"""kata babi pada paragraf itu konteksnya peternakan""",0,quoted_or_descriptive
+"""warga desa memasang pagar untuk mencegah babi hutan masuk""",0,news_or_public_issue
+"""petugas kehutanan memantau pergerakan monyet di lereng""",0,news_or_public_issue
+"""artikel itu menjelaskan perawatan anjing pasca vaksin""",0,news_or_public_issue
+"""berita lokal menyebut anjing liar meresahkan warga""",0,news_or_public_issue
+"""laporan terbaru membahas monyet yang masuk sekolah""",0,news_or_public_issue
+"""petani kehilangan panen akibat babi hutan""",0,news_or_public_issue
+"""aku terlihat aneh karena salah pilih filter""",0,self_directed_expression
+"""fotoku jadi jelek karena blur""",0,self_directed_expression
+"""rambutku kelihatan kampungan dengan model begini""",0,self_directed_expression
+"""jaket ini bikin gayaku terasa norak""",0,self_directed_expression
+"""mukaku tampak capek sekali habis perjalanan""",0,self_directed_expression
+"""aku merasa penampilanku jelek di pencahayaan ini""",0,self_directed_expression
+"""ruang kelas tadi seperti oven karena panas sekali""",0,figurative_non_targeted
+"""terminal itu seperti sarang semut karena ramai""",0,figurative_non_targeted
+"""jalanan tadi seperti ular panjang karena antre kendaraan""",0,figurative_non_targeted
+"""suasana rapat seperti gelombang karena naik turun terus""",0,figurative_non_targeted
+"""koridor itu penuh seperti pasar pagi""",0,figurative_non_targeted
+"""diskusi ini berputar seperti komidi putar""",0,figurative_non_targeted
+"""anjing itu sedang minum dari mangkuk biru""",0,pet_context
+"""monyet di kandang itu tampak sehat dan aktif""",0,animal_literal
+"""babi hutan itu muncul dekat kebun singkong""",0,animal_literal
+"""anjing saya suka duduk dekat kipas""",0,pet_context
+"""monyet itu mengambil daun lalu memakannya""",0,animal_literal
+"""babi ternak itu baru dipindah ke kandang besar""",0,animal_literal
+"""anjing pelacak itu mengikuti aroma dengan baik""",0,pet_context
+"""monyet liar itu berlari ke arah pepohonan""",0,animal_literal
+"""babi kecil itu bermain dengan air lumpur""",0,animal_literal
+"""anjing tetangga memakai lonceng kecil di lehernya""",0,pet_context
+"""warna tas ini terlalu norak kalau dipakai malam hari""",0,object_criticism
+"""konsep dekorasinya kampungan tapi tetap meriah""",0,object_criticism
+"""poster itu jelek karena terlalu banyak elemen""",0,object_criticism
+"""bentuk kursi ini aneh untuk ruang rapat""",0,object_criticism
+"""stikernya norak tapi anak-anak suka""",0,object_criticism
+"""model topi itu kampungan menurut beberapa orang""",0,object_criticism
+"""kemasan makanan itu jelek tapi isinya enak""",0,object_criticism
+"""warna interiornya aneh dan terlalu ramai""",0,object_criticism
+"""layout katalog ini terasa norak""",0,object_criticism
+"""desain papan nama lama itu kampungan sekali""",0,object_criticism
+"""anjir, ternyata ruangan ini terkunci""",0,general_expression
+"""gila, besar sekali aula barunya""",0,general_expression
+"""parah, pekerjaan rumahnya numpuk""",0,general_expression
+"""buset, lampunya silau banget""",0,general_expression
+"""kampret, aku salah set alarm""",0,self_directed_expression
+"""bangsat, aku tertinggal dompet lagi""",1,self_directed_expression
+"""goblok, aku belum backup file penting""",0,self_directed_expression
+"""bego banget gue kira itu hari Sabtu""",0,self_directed_expression
+"""tolol banget aku naruh charger di meja orang""",0,self_directed_expression
+"""anjing, ternyata sepedaku bannya kempes""",0,self_directed_expression
+"""anjing itu sedang tidur di samping kursi""",0,pet_context
+"""monyet kecil itu memanjat pagar taman""",0,animal_literal
+"""babi hutan terlihat dekat sungai sore tadi""",0,animal_literal
+"""anjing peliharaan kami baru selesai vaksin""",0,pet_context
+"""monyet itu mengambil buah dari ranting rendah""",0,animal_literal
+"""babi ternak itu dipelihara di kandang bersih""",0,animal_literal
+"""anjing saya suka duduk dekat pintu depan""",0,pet_context
+"""monyet liar itu berlari ke arah pohon besar""",0,animal_literal
+"""babi kecil itu bermain di genangan air""",0,animal_literal
+"""anjing penjaga itu menggonggong saat motor lewat""",0,pet_context
+"""desain undangan ini terlalu norak untuk acara resmi""",0,object_criticism
+"""warna dekorasinya terasa kampungan buat aula besar""",0,object_criticism
+"""poster lama itu jelek tapi informasinya masih jelas""",0,object_criticism
+"""tampilan katalog ini aneh karena terlalu banyak warna""",0,object_criticism
+"""cover album itu norak tapi cukup menarik perhatian""",0,object_criticism
+"""model sandal ini kampungan menurut selera saya""",0,object_criticism
+"""layout pamfletnya jelek dan kurang nyaman dibaca""",0,object_criticism
+"""warna jaket itu aneh kalau dipakai malam hari""",0,object_criticism
+"""konsep spanduk ini terlalu ramai dan terasa norak""",0,object_criticism
+"""bentuk meja itu aneh tapi masih fungsional""",0,object_criticism
+"""anjir, ternyata jadwal ujiannya berubah lagi""",0,general_expression
+"""gila, luas banget lapangannya""",0,general_expression
+"""parah, hujannya bikin jalan macet total""",0,general_expression
+"""buset, cepat banget respon sistemnya""",0,general_expression
+"""kampret, aku salah simpan file revisi""",0,self_directed_expression
+"""bangsat, aku baru sadar ada typo di judul""",1,self_directed_expression
+"""goblok, aku malah lupa bawa catatan penting""",0,self_directed_expression
+"""bego banget gue gak cek baterai dari tadi""",0,self_directed_expression
+"""tolol banget aku kirain ruangannya di lantai satu""",0,self_directed_expression
+"""anjing, tanganku kepentok meja lagi""",0,self_directed_expression
+"""kata monyet pada kalimat ini merujuk pada hewan liar""",0,quoted_or_descriptive
+"""kata babi dalam teks itu dipakai dalam konteks peternakan""",0,quoted_or_descriptive
+"""kata anjing di paragraf ini hanyalah nama hewan""",0,quoted_or_descriptive
+"""istilah norak di ulasan itu membahas gaya panggung""",0,quoted_or_descriptive
+"""kata kampungan pada review ini menilai desain ruangan""",0,quoted_or_descriptive
+"""kata jelek di sini menjelaskan kualitas tampilan gambar""",0,quoted_or_descriptive
+"""berita pagi membahas monyet yang turun ke area sekolah""",0,news_or_public_issue
+"""laporan warga menyebut babi hutan merusak ladang jagung""",0,news_or_public_issue
+"""artikel itu menjelaskan cara merawat anjing yang sakit""",0,news_or_public_issue
+"""petugas mengevakuasi anjing liar dari kawasan pasar""",0,news_or_public_issue
+"""tim konservasi mengamati kelompok monyet di hutan kota""",0,news_or_public_issue
+"""petani mulai memasang pagar karena babi hutan sering datang""",0,news_or_public_issue
+"""aku terlihat jelek di foto itu karena kurang cahaya""",0,self_directed_expression
+"""mukaku kelihatan aneh kalau difoto dari bawah""",0,self_directed_expression
+"""rambutku terasa norak kalau dibelah seperti ini""",0,self_directed_expression
+"""bajuku kelihatan kampungan saat dipakai dengan topi itu""",0,self_directed_expression
+"""aku tampak capek sekali di rekaman tadi""",0,self_directed_expression
+"""ruangan itu seperti pasar karena semua orang bicara bersamaan""",0,figurative_non_targeted
+"""suasana kelas tadi seperti kebun binatang karena terlalu ramai""",0,figurative_non_targeted
+"""antrian kendaraan itu panjang seperti ular""",0,figurative_non_targeted
+"""meja kerja saya berantakan seperti kapal pecah""",0,figurative_non_targeted

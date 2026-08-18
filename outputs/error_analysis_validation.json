@@ -1,0 +1,250 @@
+{
+  "split": "validation",
+  "total_samples": 2080,
+  "total_fp": 152,
+  "total_fn": 156,
+  "false_positives": [
+    {
+      "text": "user this administration never fails to keep their white trashy unprofessionalism from leaking out",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9994
+    },
+    {
+      "text": "Knet memang terlalu tinggi obsesinya dan sifat rasisnya terlalu kuat menang kalah dlm pertandingan itu uda biasa,",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9994
+    },
+    {
+      "text": "Udah biasa kita bercanda kayak gini, jangan dimasukin ke hati",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9994
+    },
+    {
+      "text": "Gila ya negara konoha ini, si Rafi ini adik perempuan nya, adik ipar, kk ipar dan seterus nya dijadikan pejabat memang edan konoha ini, si Rafi ini jg lulusan apa sih? Sarjana apa? Gampang amat keluarga si Rafi pd jd pejabat,,,,sementara banyak sarjana\" S 1, S 2, S 3, nyari kerja di konoha ini suusaaaah banget. Biadab memang keluarga besar si Rafi ini....Mari seluruh rakyat berdoa memohon kpd yg maha kuasa Allah SWA, agar keluarga besar si Rafi mendapat hukuman yg se berat\" nya atas ke dzaliman nya. Hai keluarga tamak, rakus, serakah kalian hrs ingat yah bahwa adzab dan laknat Allah itu maha dasyat, dan satu saat nanti dgn berjalan nya waktu lambat laun akan kalian nikmati adzab dan laknat Allah ini krn Allah tdk tidur, Allah maha mengetahui maha besar maha benar dgn segala firman nya 🤲🤲🤲...Segera tunjuk kan kuasa mu ya Allah.",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9992
+    },
+    {
+      "text": "Siapa dapat first impression macam niumpah aku ingat kau dulu sombong gila Orang pun cakap kau macam sombong Aku p",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.999
+    },
+    {
+      "text": "jontron is a fucking scumbag",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9986
+    },
+    {
+      "text": "Kasia Ajg Tas Nya KW Dubuli Sexagat Tiktok Wakkaka",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9983
+    },
+    {
+      "text": "the president of the united states is a repulsive racist nazi cheer leading lying sack of drek just saying",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9981
+    },
+    {
+      "text": "who cares??? she broke into his home and shot him. she is the one. that needs to be held fully accountable for her actions.",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.998
+    },
+    {
+      "text": "i fully support israels right to exist too. dont confuse the country with the zionist demons meddling in european affairs. the pope doesnt represent all christians, neither does the supposed head of the church of england, these zionist do not represent israel.",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9978
+    },
+    {
+      "text": "dont let the door hit you in the ass.",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9974
+    },
+    {
+      "text": "jadi nih orang keturunan monyet liat saja mukanya",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9973
+    },
+    {
+      "text": "\"Lu mirip anaknya kick andy yg namanya marlo bang\"",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9973
+    },
+    {
+      "text": "Jika hewan ini benar -benar sensitif, apa yang salah dengan kucing yang Anda masukkan ke dalam pengering sampai Anda mati dia",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9972
+    },
+    {
+      "text": "i just hope its ab how dumb he is and that shane isnt all awww lets forgive him bc if he does that im unstanning",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9971
+    },
+    {
+      "text": "Viralkan, adili!!!",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9969
+    },
+    {
+      "text": "greed and corruption at the higher levels, cowardice people at the lower level.",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9968
+    },
+    {
+      "text": "the communist leadership must also remove themselves to their choice of a communist or muslim run country they so blatantly love",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9967
+    },
+    {
+      "text": "i pray you are right and that this really happens, talk about an injustice to america that obammy was able to appoint thugs to our scotus, i hope the whole thing blows wide open and they all come falling down!!!!!!!!",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9967
+    },
+    {
+      "text": "catering to black racists and illiterate , dependent moochers is schumers real deal ! term limits",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9963
+    }
+  ],
+  "false_negatives": [
+    {
+      "text": "Anak istri dan keluarga besarnya pasti bangga",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0018
+    },
+    {
+      "text": "ditengah manusia monyet kulitnya bercorak batik",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0018
+    },
+    {
+      "text": "wow  you are so cute",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0019
+    },
+    {
+      "text": "a cute girl that ive had a crush on since earlier this year just called me funny and i want to throw up",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0022
+    },
+    {
+      "text": "there must be a cash prize or something for whoever comes up with the first conservatives pounce take.",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0023
+    },
+    {
+      "text": "when the wheel hits the road , it wo nt matter if you swing for yellow or black , just that you swing from the nearest overpass .",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0023
+    },
+    {
+      "text": "Tls followan ama aku yukk rep rt kita temenan",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0025
+    },
+    {
+      "text": "\"Eh ada pelakor, pas banget frame ke tiga, orang ke 3\"",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.003
+    },
+    {
+      "text": "thats some world class california edjumakation right there",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0031
+    },
+    {
+      "text": "selamat natal dan orde baru ya â˜ºï¸â˜ºï¸â˜ºï¸ 58% seneng nih pasti",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0032
+    },
+    {
+      "text": "bang coba duet sama firdaus kyke cocok deh",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0033
+    },
+    {
+      "text": "serasa pengen ngumpul kekuatan terus lari Dari lapangan Sekencang harapan terus Di Ulti tuh sampe ulti infinitey??????",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0036
+    },
+    {
+      "text": "setelah menjelajahi beberapa negara, akhirnya kembali ke produk lokalðŸ”¥",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0037
+    },
+    {
+      "text": "BPJS, PLN, PERTAMINA NGAKU DEFISIT SEMUA...; ; ANEHNYA PRESIDEN NGAKU HEBAT; ; KALAH SEMUA SAMA TUKANG PISANG YG OMZET TRILIUNAN",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0038
+    },
+    {
+      "text": "knows how to draw a crowd. cheap drinks and cleavage.",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.004
+    },
+    {
+      "text": "yg dibahas ini lagiii ini lg ga bosen cok",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0041
+    },
+    {
+      "text": "from julius streichers der strmer",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0042
+    },
+    {
+      "text": "twitter should dump the little blue bird mascot and just officially change it to a set of boobs.",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0043
+    },
+    {
+      "text": "are you an ostrich?",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0047
+    },
+    {
+      "text": "betul, bisa di liat dari anak sekolah jaman pak Harto sama anak sekolah jaman sekarang, dl kelas 6 SD aja sudah hapal ibukota negara-negara, pegangan rpul, rpal, 1 jam berapa menit aja tau, anak skrg? 😭😭😭",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0048
+    }
+  ]
+}

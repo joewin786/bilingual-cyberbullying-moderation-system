@@ -1,0 +1,305 @@
+{
+  "name": "Bot Metrics Collector — Evaluasi Sistem",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 30
+            }
+          ]
+        }
+      },
+      "id": "schedule_trigger_node",
+      "name": "Schedule — Setiap 30 Menit",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 200]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bot-metrics",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook_ondemand_node",
+      "name": "Webhook — On-Demand Query",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 400],
+      "webhookId": "bot-metrics-ondemand"
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://api:8000/metrics/snapshot",
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "id": "fetch_snapshot_node",
+      "name": "HTTP GET — /metrics/snapshot",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [500, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://api:8000/metrics/snapshot",
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "id": "fetch_snapshot_ondemand_node",
+      "name": "HTTP GET — /metrics/snapshot (On-Demand)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [500, 400]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.is_stale }}",
+              "value2": false
+            }
+          ]
+        }
+      },
+      "id": "check_stale_node",
+      "name": "IF — Data Segar?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [740, 200]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "field_timestamp",
+              "name": "snapshot_at",
+              "value": "={{ $json.snapshot?.timestamp ?? 'N/A' }}",
+              "type": "string"
+            },
+            {
+              "id": "field_latency_p50",
+              "name": "latency_p50_ms",
+              "value": "={{ $json.snapshot?.avg_latency_ms ?? null }}",
+              "type": "number"
+            },
+            {
+              "id": "field_latency_p95",
+              "name": "latency_p95_ms",
+              "value": "={{ $json.snapshot?.p95_latency_ms ?? null }}",
+              "type": "number"
+            },
+            {
+              "id": "field_latency_p99",
+              "name": "latency_p99_ms",
+              "value": "={{ $json.snapshot?.p99_latency_ms ?? null }}",
+              "type": "number"
+            },
+            {
+              "id": "field_total_messages",
+              "name": "total_messages",
+              "value": "={{ $json.snapshot?.total_messages ?? 0 }}",
+              "type": "number"
+            },
+            {
+              "id": "field_total_detections",
+              "name": "total_detections",
+              "value": "={{ $json.snapshot?.total_detections ?? 0 }}",
+              "type": "number"
+            },
+            {
+              "id": "field_api_success_rate",
+              "name": "api_success_rate_pct",
+              "value": "={{ $json.snapshot?.api_success_rate ?? null }}",
+              "type": "number"
+            },
+            {
+              "id": "field_n8n_success_rate",
+              "name": "n8n_success_rate_pct",
+              "value": "={{ $json.snapshot?.n8n_success_rate ?? null }}",
+              "type": "number"
+            },
+            {
+              "id": "field_fallback_rate",
+              "name": "fallback_rate_pct",
+              "value": "={{ $json.snapshot?.fallback_rate ?? 0 }}",
+              "type": "number"
+            },
+            {
+              "id": "field_error_count",
+              "name": "error_count",
+              "value": "={{ $json.snapshot?.error_count ?? 0 }}",
+              "type": "number"
+            },
+            {
+              "id": "field_uptime",
+              "name": "uptime_seconds",
+              "value": "={{ $json.snapshot?.uptime_seconds ?? null }}",
+              "type": "number"
+            },
+            {
+              "id": "field_data_age",
+              "name": "data_age_minutes",
+              "value": "={{ $json.data_age_minutes ?? null }}",
+              "type": "number"
+            },
+            {
+              "id": "field_retrieved_at",
+              "name": "retrieved_at",
+              "value": "={{ $json.retrieved_at }}",
+              "type": "string"
+            },
+            {
+              "id": "field_status",
+              "name": "status",
+              "value": "fresh",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "format_fresh_data_node",
+      "name": "Set — Format Data (Fresh)",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.3,
+      "position": [980, 120]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "field_stale_msg",
+              "name": "status",
+              "value": "stale",
+              "type": "string"
+            },
+            {
+              "id": "field_stale_retrieved",
+              "name": "retrieved_at",
+              "value": "={{ $json.retrieved_at }}",
+              "type": "string"
+            },
+            {
+              "id": "field_stale_age",
+              "name": "data_age_minutes",
+              "value": "={{ $json.data_age_minutes ?? null }}",
+              "type": "number"
+            },
+            {
+              "id": "field_stale_message",
+              "name": "message",
+              "value": "={{ $json.message }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "format_stale_data_node",
+      "name": "Set — Flag Data Usang",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.3,
+      "position": [980, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "respond_ondemand_node",
+      "name": "Respond — Kembalikan ke Pemanggil",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [740, 400]
+    }
+  ],
+  "connections": {
+    "Schedule — Setiap 30 Menit": {
+      "main": [
+        [
+          {
+            "node": "HTTP GET — /metrics/snapshot",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook — On-Demand Query": {
+      "main": [
+        [
+          {
+            "node": "HTTP GET — /metrics/snapshot (On-Demand)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP GET — /metrics/snapshot": {
+      "main": [
+        [
+          {
+            "node": "IF — Data Segar?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP GET — /metrics/snapshot (On-Demand)": {
+      "main": [
+        [
+          {
+            "node": "Respond — Kembalikan ke Pemanggil",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF — Data Segar?": {
+      "main": [
+        [
+          {
+            "node": "Set — Format Data (Fresh)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Set — Flag Data Usang",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "saveExecutionProgress": true
+  },
+  "tags": ["cyberbullying", "metrics", "evaluation", "monitoring"],
+  "meta": {
+    "description": "Workflow untuk mengambil data evaluasi sistem Discord bot (latency, throughput, reliability) dari FastAPI endpoint /metrics/snapshot. Berjalan otomatis setiap 30 menit (Schedule trigger) dan mendukung query manual via Webhook POST /bot-metrics."
+  }
+}

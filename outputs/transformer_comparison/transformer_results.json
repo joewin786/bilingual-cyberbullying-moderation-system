@@ -1,0 +1,190 @@
+[
+  {
+    "key": "xlm-roberta",
+    "name": "XLM-RoBERTa Base",
+    "hf_id": "xlm-roberta-base",
+    "type": "Multilingual",
+    "train_time_seconds": 0.0,
+    "infer_time_seconds": 2.4785,
+    "samples_per_second": 839.22,
+    "validation": {
+      "accuracy": 0.8519230769230769,
+      "precision_binary": 0.8693035253654342,
+      "recall_binary": 0.8663239074550129,
+      "f1_binary": 0.8678111587982833,
+      "precision_macro": 0.8495917844929679,
+      "recall_macro": 0.8499198945818328,
+      "f1_macro": 0.8497525739346607,
+      "confusion_matrix": [
+        [
+          761,
+          152
+        ],
+        [
+          156,
+          1011
+        ]
+      ]
+    },
+    "test": {
+      "accuracy": 0.8423076923076923,
+      "precision_binary": 0.8679750223015165,
+      "recall_binary": 0.8438855160450998,
+      "f1_binary": 0.8557607739665787,
+      "precision_macro": 0.8401397530694235,
+      "recall_macro": 0.8421153578068001,
+      "f1_macro": 0.8409238652441589,
+      "confusion_matrix": [
+        [
+          779,
+          148
+        ],
+        [
+          180,
+          973
+        ]
+      ]
+    }
+  },
+  {
+    "key": "indobert-p1",
+    "name": "IndoBERT Base (IndoBenchmark)",
+    "hf_id": "indobenchmark/indobert-base-p1",
+    "type": "Indonesian Monolingual",
+    "train_time_seconds": 0.0,
+    "infer_time_seconds": 2.4352,
+    "samples_per_second": 854.14,
+    "validation": {
+      "accuracy": 0.8423076923076923,
+      "precision_binary": 0.8613264427217916,
+      "recall_binary": 0.856898029134533,
+      "f1_binary": 0.8591065292096219,
+      "precision_macro": 0.8398035913282516,
+      "recall_macro": 0.8402781492879674,
+      "f1_macro": 0.8400336139497891,
+      "confusion_matrix": [
+        [
+          752,
+          161
+        ],
+        [
+          167,
+          1000
+        ]
+      ]
+    },
+    "test": {
+      "accuracy": 0.8269230769230769,
+      "precision_binary": 0.8397600685518424,
+      "recall_binary": 0.849956634865568,
+      "f1_binary": 0.8448275862068966,
+      "precision_macro": 0.8251374274851216,
+      "recall_macro": 0.8241153185115326,
+      "f1_macro": 0.8245877061469266,
+      "confusion_matrix": [
+        [
+          740,
+          187
+        ],
+        [
+          173,
+          980
+        ]
+      ]
+    }
+  },
+  {
+    "key": "mbert-cased",
+    "name": "mBERT Base (Multilingual)",
+    "hf_id": "bert-base-multilingual-cased",
+    "type": "Multilingual",
+    "train_time_seconds": 0.0,
+    "infer_time_seconds": 2.9702,
+    "samples_per_second": 700.29,
+    "validation": {
+      "accuracy": 0.833173076923077,
+      "precision_binary": 0.8583916083916084,
+      "recall_binary": 0.8414738646101114,
+      "f1_binary": 0.8498485504110774,
+      "precision_macro": 0.830371017871018,
+      "recall_macro": 0.8320184218997984,
+      "f1_macro": 0.8310897700676263,
+      "confusion_matrix": [
+        [
+          751,
+          162
+        ],
+        [
+          185,
+          982
+        ]
+      ]
+    },
+    "test": {
+      "accuracy": 0.8216346153846154,
+      "precision_binary": 0.8353344768439108,
+      "recall_binary": 0.8447528187337381,
+      "f1_binary": 0.8400172488141441,
+      "precision_macro": 0.8197460130390233,
+      "recall_macro": 0.8188165388167072,
+      "f1_macro": 0.8192481681333078,
+      "confusion_matrix": [
+        [
+          735,
+          192
+        ],
+        [
+          179,
+          974
+        ]
+      ]
+    }
+  },
+  {
+    "key": "indobert-indolem",
+    "name": "IndoBERT Uncased (IndoLEM)",
+    "hf_id": "indolem/indobert-base-uncased",
+    "type": "Indonesian Monolingual",
+    "train_time_seconds": 0.0,
+    "infer_time_seconds": 2.7638,
+    "samples_per_second": 752.59,
+    "validation": {
+      "accuracy": 0.8153846153846154,
+      "precision_binary": 0.8343296327924851,
+      "recall_binary": 0.8371893744644388,
+      "f1_binary": 0.8357570573139436,
+      "precision_macro": 0.812654365351138,
+      "recall_macro": 0.8123515327962938,
+      "f1_macro": 0.8124998239368839,
+      "confusion_matrix": [
+        [
+          719,
+          194
+        ],
+        [
+          190,
+          977
+        ]
+      ]
+    },
+    "test": {
+      "accuracy": 0.8129807692307692,
+      "precision_binary": 0.8199329983249581,
+      "recall_binary": 0.8490893321769297,
+      "f1_binary": 0.8342564976565828,
+      "precision_macro": 0.8117723682369712,
+      "recall_macro": 0.8085791860453149,
+      "f1_macro": 0.8098474986903984,
+      "confusion_matrix": [
+        [
+          712,
+          215
+        ],
+        [
+          174,
+          979
+        ]
+      ]
+    }
+  }
+]

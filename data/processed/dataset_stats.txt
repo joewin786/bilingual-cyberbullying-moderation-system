@@ -1,0 +1,24 @@
+============================================================
+DATASET STATISTICS
+============================================================
+Total samples : 8706
+  Bully       : 4518
+  Non-bully   : 4188
+
+Train split   : 6964 (80.0%)
+Val split     : 871 (10.0%)
+Test split    : 871 (10.0%)
+
+Source breakdown:
+  codemixed: 173 | bully=101 | non-bully=72
+  contrastive_dataset: 60 | bully=30 | non-bully=30
+  cyberbullying_1000: 93 | bully=40 | non-bully=53
+  dataset_clean: 4 | bully=3 | non-bully=1
+  dataset_research: 1500 | bully=670 | non-bully=830
+  fn_fp_reduction: 60 | bully=30 | non-bully=30
+  fn_hatespeech_id: 1991 | bully=1991 | non-bully=0
+  manual_augmentation: 500 | bully=0 | non-bully=500
+  relabel: 1669 | bully=324 | non-bully=1345
+  tiktok: 1456 | bully=731 | non-bully=725
+  tiktok_v2: 1200 | bully=598 | non-bully=602
+============================================================

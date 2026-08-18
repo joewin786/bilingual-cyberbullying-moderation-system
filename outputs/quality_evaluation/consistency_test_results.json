@@ -1,0 +1,182 @@
+[
+  {
+    "text": "dasar bocah bego main gini aja gabisa",
+    "repetitions": 20,
+    "successful_responses": 20,
+    "unique_labels_found": [
+      "bully"
+    ],
+    "unique_confidences_found": [
+      0.997026
+    ],
+    "is_fully_consistent": true,
+    "label_consistency_pct": 100.0,
+    "sample_history": [
+      {
+        "rep": 1,
+        "label": "bully",
+        "confidence": 0.997026,
+        "latency_ms": 29.06
+      },
+      {
+        "rep": 2,
+        "label": "bully",
+        "confidence": 0.997026,
+        "latency_ms": 68.14
+      },
+      {
+        "rep": 3,
+        "label": "bully",
+        "confidence": 0.997026,
+        "latency_ms": 71.84
+      },
+      {
+        "rep": 4,
+        "label": "bully",
+        "confidence": 0.997026,
+        "latency_ms": 77.86
+      },
+      {
+        "rep": 5,
+        "label": "bully",
+        "confidence": 0.997026,
+        "latency_ms": 73.52
+      }
+    ]
+  },
+  {
+    "text": "halo kawan, terima kasih sudah bantu tadi ya",
+    "repetitions": 20,
+    "successful_responses": 20,
+    "unique_labels_found": [
+      "non-bully"
+    ],
+    "unique_confidences_found": [
+      0.997907
+    ],
+    "is_fully_consistent": true,
+    "label_consistency_pct": 100.0,
+    "sample_history": [
+      {
+        "rep": 1,
+        "label": "non-bully",
+        "confidence": 0.997907,
+        "latency_ms": 88.74
+      },
+      {
+        "rep": 2,
+        "label": "non-bully",
+        "confidence": 0.997907,
+        "latency_ms": 25.06
+      },
+      {
+        "rep": 3,
+        "label": "non-bully",
+        "confidence": 0.997907,
+        "latency_ms": 69.1
+      },
+      {
+        "rep": 4,
+        "label": "non-bully",
+        "confidence": 0.997907,
+        "latency_ms": 70.37
+      },
+      {
+        "rep": 5,
+        "label": "non-bully",
+        "confidence": 0.997907,
+        "latency_ms": 69.11
+      }
+    ]
+  },
+  {
+    "text": "you are so dumb, uninstall the game already",
+    "repetitions": 20,
+    "successful_responses": 20,
+    "unique_labels_found": [
+      "bully"
+    ],
+    "unique_confidences_found": [
+      0.995663
+    ],
+    "is_fully_consistent": true,
+    "label_consistency_pct": 100.0,
+    "sample_history": [
+      {
+        "rep": 1,
+        "label": "bully",
+        "confidence": 0.995663,
+        "latency_ms": 72.8
+      },
+      {
+        "rep": 2,
+        "label": "bully",
+        "confidence": 0.995663,
+        "latency_ms": 72.13
+      },
+      {
+        "rep": 3,
+        "label": "bully",
+        "confidence": 0.995663,
+        "latency_ms": 69.67
+      },
+      {
+        "rep": 4,
+        "label": "bully",
+        "confidence": 0.995663,
+        "latency_ms": 72.92
+      },
+      {
+        "rep": 5,
+        "label": "bully",
+        "confidence": 0.995663,
+        "latency_ms": 70.62
+      }
+    ]
+  },
+  {
+    "text": "nice game everyone, play style kalian keren",
+    "repetitions": 20,
+    "successful_responses": 20,
+    "unique_labels_found": [
+      "non-bully"
+    ],
+    "unique_confidences_found": [
+      0.99801
+    ],
+    "is_fully_consistent": true,
+    "label_consistency_pct": 100.0,
+    "sample_history": [
+      {
+        "rep": 1,
+        "label": "non-bully",
+        "confidence": 0.99801,
+        "latency_ms": 82.87
+      },
+      {
+        "rep": 2,
+        "label": "non-bully",
+        "confidence": 0.99801,
+        "latency_ms": 70.79
+      },
+      {
+        "rep": 3,
+        "label": "non-bully",
+        "confidence": 0.99801,
+        "latency_ms": 69.64
+      },
+      {
+        "rep": 4,
+        "label": "non-bully",
+        "confidence": 0.99801,
+        "latency_ms": 73.17
+      },
+      {
+        "rep": 5,
+        "label": "non-bully",
+        "confidence": 0.99801,
+        "latency_ms": 71.8
+      }
+    ]
+  }
+]

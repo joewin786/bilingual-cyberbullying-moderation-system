@@ -1,0 +1,82 @@
+services:
+
+  # ── PostgreSQL Database ──────────────────────────────────
+  db:
+    image: postgres:15-alpine
+    container_name: cyberbully_db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-cyberbully_secure_pwd}
+      - POSTGRES_DB=${POSTGRES_DB:-cyberbully_db}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - cyberbully_net
+
+  # ── FastAPI Inference Server ─────────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cyberbully_api
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    environment:
+      - API_PORT=8000
+      - API_HOST=0.0.0.0
+      - MODEL_PATH=/app/models/xlmr_cyberbully/best_model
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=${POSTGRES_DB:-cyberbully_db}
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-cyberbully_secure_pwd}
+    volumes:
+      - ./models:/app/models
+      - ./configs:/app/configs
+      - .env:/app/.env
+    networks:
+      - cyberbully_net
+
+  # ── n8n Self-Hosted ──────────────────────────────────────
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: cyberbully_n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://localhost:5678/
+      - GENERIC_TIMEZONE=Asia/Jakarta
+      # Aktifkan ini untuk basic auth (keamanan)
+      # - N8N_BASIC_AUTH_ACTIVE=true
+      # - N8N_BASIC_AUTH_USER=admin
+      # - N8N_BASIC_AUTH_PASSWORD=password_kamu
+    volumes:
+      - ./n8n/data:/home/node/.n8n
+    networks:
+      - cyberbully_net
+
+volumes:
+  postgres_data:
+
+networks:
+  cyberbully_net:
+    driver: bridge
+
+# ────────────────────────────────────────────────────────────
+# Cara pakai:
+#   docker compose up -d          ← jalankan n8n di background
+#   docker compose down           ← matikan n8n
+#   docker compose logs -f n8n    ← lihat log n8n
+#
+# Akses dashboard n8n: http://localhost:5678
+# ────────────────────────────────────────────────────────────

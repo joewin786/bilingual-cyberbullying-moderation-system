@@ -1,0 +1,58 @@
+{
+  "concurrency_5": {
+    "concurrency": 5,
+    "total_messages": 200,
+    "success_count": 200,
+    "failure_count": 0,
+    "success_rate_pct": 100.0,
+    "duration_sec": 5.21,
+    "throughput_msg_per_sec": 38.39,
+    "throughput_msg_per_min": 2303.48,
+    "latency_p50_ms": 118.72,
+    "latency_p95_ms": 176.23,
+    "latency_p99_ms": 230.24,
+    "latency_mean_ms": 128.08
+  },
+  "concurrency_20": {
+    "concurrency": 20,
+    "total_messages": 200,
+    "success_count": 200,
+    "failure_count": 0,
+    "success_rate_pct": 100.0,
+    "duration_sec": 4.78,
+    "throughput_msg_per_sec": 41.87,
+    "throughput_msg_per_min": 2512.31,
+    "latency_p50_ms": 454.87,
+    "latency_p95_ms": 549.03,
+    "latency_p99_ms": 561.53,
+    "latency_mean_ms": 457.81
+  },
+  "concurrency_50": {
+    "concurrency": 50,
+    "total_messages": 200,
+    "success_count": 200,
+    "failure_count": 0,
+    "success_rate_pct": 100.0,
+    "duration_sec": 4.93,
+    "throughput_msg_per_sec": 40.54,
+    "throughput_msg_per_min": 2432.1,
+    "latency_p50_ms": 1199.5,
+    "latency_p95_ms": 1249.44,
+    "latency_p99_ms": 1254.31,
+    "latency_mean_ms": 1078.23
+  },
+  "concurrency_100": {
+    "concurrency": 100,
+    "total_messages": 200,
+    "success_count": 200,
+    "failure_count": 0,
+    "success_rate_pct": 100.0,
+    "duration_sec": 5.18,
+    "throughput_msg_per_sec": 38.62,
+    "throughput_msg_per_min": 2317.05,
+    "latency_p50_ms": 1983.23,
+    "latency_p95_ms": 2581.24,
+    "latency_p99_ms": 2689.03,
+    "latency_mean_ms": 1987.77
+  }
+}

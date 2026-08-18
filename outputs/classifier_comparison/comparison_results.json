@@ -1,0 +1,207 @@
+{
+  "timestamp": "2026-07-11T03:28:17.467747",
+  "seed": 42,
+  "tfidf_config": {
+    "max_features": 20000,
+    "ngram_range": [
+      1,
+      2
+    ]
+  },
+  "embedding_model": "xlm-roberta-base",
+  "data": {
+    "train_samples": 22871,
+    "val_samples": 2080,
+    "test_samples": 2080
+  },
+  "classifiers": [
+    {
+      "name": "Naive Bayes",
+      "feature": "TF-IDF",
+      "train_time_seconds": 0.0,
+      "validation": {
+        "classifier": "Naive Bayes (Val)",
+        "accuracy": 0.7644,
+        "precision_binary": 0.7667,
+        "recall_binary": 0.8338,
+        "f1_binary": 0.7989,
+        "precision_macro": 0.7638,
+        "recall_macro": 0.7548,
+        "f1_macro": 0.7573,
+        "f1_weighted": 0.7624,
+        "confusion_matrix": [
+          [
+            617,
+            296
+          ],
+          [
+            194,
+            973
+          ]
+        ]
+      },
+      "test": {
+        "classifier": "Naive Bayes (Test)",
+        "accuracy": 0.7591,
+        "precision_binary": 0.7591,
+        "recall_binary": 0.8283,
+        "f1_binary": 0.7922,
+        "precision_macro": 0.7591,
+        "recall_macro": 0.7507,
+        "f1_macro": 0.7529,
+        "f1_weighted": 0.7571,
+        "confusion_matrix": [
+          [
+            624,
+            303
+          ],
+          [
+            198,
+            955
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Cosine Similarity",
+      "feature": "XLM-R Embeddings",
+      "train_time_seconds": 0.02,
+      "validation": {
+        "classifier": "Cosine Similarity (Val)",
+        "accuracy": 0.5875,
+        "precision_binary": 0.6083,
+        "recall_binary": 0.7438,
+        "f1_binary": 0.6692,
+        "precision_macro": 0.5752,
+        "recall_macro": 0.5658,
+        "f1_macro": 0.5607,
+        "f1_weighted": 0.5739,
+        "confusion_matrix": [
+          [
+            354,
+            559
+          ],
+          [
+            299,
+            868
+          ]
+        ]
+      },
+      "test": {
+        "classifier": "Cosine Similarity (Test)",
+        "accuracy": 0.5841,
+        "precision_binary": 0.6013,
+        "recall_binary": 0.7415,
+        "f1_binary": 0.6641,
+        "precision_macro": 0.5742,
+        "recall_macro": 0.5649,
+        "f1_macro": 0.5592,
+        "f1_weighted": 0.5706,
+        "confusion_matrix": [
+          [
+            360,
+            567
+          ],
+          [
+            298,
+            855
+          ]
+        ]
+      }
+    },
+    {
+      "name": "SVM Linear",
+      "feature": "TF-IDF",
+      "train_time_seconds": 0.12,
+      "validation": {
+        "classifier": "SVM Linear (Val)",
+        "accuracy": 0.8091,
+        "precision_binary": 0.8401,
+        "recall_binary": 0.8149,
+        "f1_binary": 0.8273,
+        "precision_macro": 0.8061,
+        "recall_macro": 0.8083,
+        "f1_macro": 0.807,
+        "f1_weighted": 0.8095,
+        "confusion_matrix": [
+          [
+            732,
+            181
+          ],
+          [
+            216,
+            951
+          ]
+        ]
+      },
+      "test": {
+        "classifier": "SVM Linear (Test)",
+        "accuracy": 0.7875,
+        "precision_binary": 0.8223,
+        "recall_binary": 0.7866,
+        "f1_binary": 0.8041,
+        "precision_macro": 0.7853,
+        "recall_macro": 0.7876,
+        "f1_macro": 0.786,
+        "f1_weighted": 0.7879,
+        "confusion_matrix": [
+          [
+            731,
+            196
+          ],
+          [
+            246,
+            907
+          ]
+        ]
+      }
+    },
+    {
+      "name": "XLM-RoBERTa (fine-tuned)",
+      "feature": "Transformer (fine-tuned)",
+      "train_time_seconds": "N/A",
+      "validation": {
+        "classifier": "XLM-RoBERTa (Val)",
+        "accuracy": 0.8471,
+        "precision_binary": 0.8613,
+        "recall_binary": 0.8672,
+        "f1_binary": 0.8642,
+        "precision_macro": 0.845,
+        "recall_macro": 0.8443,
+        "f1_macro": 0.8447,
+        "f1_weighted": 0.847,
+        "confusion_matrix": [
+          [
+            750,
+            163
+          ],
+          [
+            155,
+            1012
+          ]
+        ]
+      },
+      "test": {
+        "classifier": "XLM-RoBERTa (Test)",
+        "accuracy": 0.8447,
+        "precision_binary": 0.8673,
+        "recall_binary": 0.85,
+        "f1_binary": 0.8585,
+        "precision_macro": 0.8426,
+        "recall_macro": 0.8441,
+        "f1_macro": 0.8432,
+        "f1_weighted": 0.8449,
+        "confusion_matrix": [
+          [
+            777,
+            150
+          ],
+          [
+            173,
+            980
+          ]
+        ]
+      }
+    }
+  ]
+}

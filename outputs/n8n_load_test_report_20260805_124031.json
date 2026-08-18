@@ -1,0 +1,14 @@
+{
+  "target_url": "http://localhost:5678/webhook/cyberbully",
+  "total_pesan": 5,
+  "berhasil": 5,
+  "gagal": 0,
+  "success_rate_pct": 100.0,
+  "latency_p50_ms": 403.03,
+  "latency_p95_ms": 472.15,
+  "latency_p99_ms": 479.04,
+  "latency_mean_ms": 408.29,
+  "latency_stdev_ms": 52.26,
+  "throughput_pesan_per_menit": 377.97,
+  "durasi_uji_detik": 0.79
+}

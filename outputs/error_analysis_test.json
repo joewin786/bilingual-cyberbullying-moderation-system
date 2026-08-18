@@ -1,0 +1,250 @@
+{
+  "split": "test",
+  "total_samples": 2080,
+  "total_fp": 124,
+  "total_fn": 195,
+  "false_positives": [
+    {
+      "text": "USER Ribut harga mulu, perasaan gw sih harga telur sama daging dr jaman psk Beye sampai skrg, segitu2 aja, telor doang 24rb/kg masa ga bisa beli, ga bisa beli daging? Burger harga promo mulu tuh'",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9997
+    },
+    {
+      "text": "playing the most niggery of music on the way to work to compensate for working for the white man",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9997
+    },
+    {
+      "text": "Walah....jadi ini toh maksud anies sandi dgn DP 0%. Smua pendukungnya bisa nginep gratis di penjara. okeoce saracen",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9996
+    },
+    {
+      "text": "Hukum Tajam Ke Bawah, Tumpul Ke Atas Seperti Patok Pramuka",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9993
+    },
+    {
+      "text": "Brengsek, mati lampu lagi pas lagi asik main",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9989
+    },
+    {
+      "text": "i really wish they could find someone better than cuccinelli to represent conservatives... he is the epitome of a douche bag used car salesman with a law degree.",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9989
+    },
+    {
+      "text": "what did i prove for you? that youre blissfully ignorant? group thinker? political chump and race traitor?",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9987
+    },
+    {
+      "text": "Menjelang 80 hari kematian AFFAN dilindas barrakuda: hukumnya tajam ke bawah, tumpul ke atas. Penegak hukumnya melindungi teman, melayani atasan. Belum lagi 142 nyawa melayang di Kanjuruhan, kelanjutan kasus robohnya pesantren, misteri kematian Reno-Farhan, dan lain-lain. Indonesia Gulita!",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9987
+    },
+    {
+      "text": "\"HARGAILAH HATI WANITA YANG UDH TULUS NEMENIN LO DARI 0!!!\"",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9987
+    },
+    {
+      "text": "imagine walking into your kitchen and these crazy cockroaches will just be strolling pass you as if they paid half of the rent with you what rubbish snipper kill all of you there",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9984
+    },
+    {
+      "text": "udah ada cwo itu si lintang tmn gw",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9983
+    },
+    {
+      "text": "danish party that wants to deport muslims that are on welfare growing fast.  why oh why conservatives in the uk dont focus on this ill never know.  mbga url",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9983
+    },
+    {
+      "text": "love you too my nig squad",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9983
+    },
+    {
+      "text": "intinya relawan ingin mengadu domba rakyat dan yg utama mengalihkan isu dari semua kasus jokowi",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.998
+    },
+    {
+      "text": "if the problem is toxic masculinity, why is europe frantically scarfing up as many toxic males as possible from other countries?",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.998
+    },
+    {
+      "text": "katakan pretttttttttt",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9979
+    },
+    {
+      "text": "wtf the russians have given their own shows to george galloway an anti white communist afshin rattansi a gay moslem communist now that fat sack of shit alex salmond rtuk is just as right on as the rest of the british media what so alternative about them anyway",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9978
+    },
+    {
+      "text": "naturalization in early america was limited primarily to those who had been formed by western civilization since we seemed to have a muzzie problem remember tripoli anyone also back in the day how many races were there kinda think back then you were either black or white unlike today",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9976
+    },
+    {
+      "text": "PopulerB1 8: Prabowo Diminta Tak Jadikan Isu Rohingya untuk Tekan Pemerintah URL URL",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.9971
+    },
+    {
+      "text": "you are right. we need to choose. trudeau is a punk. trump isnt worried about him. we as a country need to decide if we want individual liberty more than an overbearing centralized government telling us how to live and wasting all out money on bureaucracy. like obamacare.",
+      "true_label": "non-bully",
+      "pred_label": "bully",
+      "confidence_bully": 0.997
+    }
+  ],
+  "false_negatives": [
+    {
+      "text": "Hedonnya sangat oke",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0023
+    },
+    {
+      "text": "demi apa pdhl dulu imut bgt kok sekarang?",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0024
+    },
+    {
+      "text": "keren banget ariel tatum nggak ngeludahin",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0024
+    },
+    {
+      "text": "drew brees got hoed",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0025
+    },
+    {
+      "text": "dilan mangap aja cantik , lah ini?",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0026
+    },
+    {
+      "text": "\"Makin jelek aja anaknya, padahal ibu ayahnya cakep2\"",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0027
+    },
+    {
+      "text": "Kirain cuma di Indonesia doang menang dipuja-puji kalah dihujat habis.",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0028
+    },
+    {
+      "text": "jualan jualan kenapa tidak yutuber bro takut tidak yang nonton yah",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0032
+    },
+    {
+      "text": "eric u got alot of balls ...",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0032
+    },
+    {
+      "text": "Keren banget ya nganggur tiap hari, itu prestasi lo?",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0033
+    },
+    {
+      "text": "@Mpelss: b.c.t??",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0034
+    },
+    {
+      "text": "lumayan okb dan norak ????",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0034
+    },
+    {
+      "text": "padahal dulu keliatan high value gitu kan personal branding nya bagus eh sekarang malah down grade",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0034
+    },
+    {
+      "text": "uk govt non announcements are the only consistant and affordable policy under labour or conservatives for decades. designed for a soundbite. no immediate resource required. never likely to ever be implemented. its propoganda but sadly it has its desired effect.",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0035
+    },
+    {
+      "text": "Gua kalo mau temenan keknya mikir2 dah wkwkwk tkt bgt ngembat suami",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0035
+    },
+    {
+      "text": "kak hitam bagus tp ga kumel",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0036
+    },
+    {
+      "text": "are you talking about me? im more green than maga.. sorry if my twitter grammar isnt up to par for you.. my eyes are bad.. maybe youll critique my latest article too please.. i dont have wellpaid editors so im sure i do slip  url",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0037
+    },
+    {
+      "text": "but it ok for the jigaboo bow wow to threaten the flotus on twatter with no penalty",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0039
+    },
+    {
+      "text": "user the only woman of color in the room is the chinaman doing the interview",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.0039
+    },
+    {
+      "text": "just about sums england up. the newly wed royal couple emerge from the church to the sound of a woman doing that bedouin shrieking sound from the crowd.",
+      "true_label": "bully",
+      "pred_label": "non-bully",
+      "confidence_bully": 0.004
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+# ============================================================
+# Training Configuration — XLM-RoBERTa Cyberbullying Detection
+# ============================================================
+
+model:
+  name: "xlm-roberta-base"          # HuggingFace model ID
+  num_labels: 2                      # 0=non-bully, 1=bully
+  max_length: 128                    # max token length per input
+
+training:
+  output_dir: "models/xlmr_cyberbully"
+  num_epochs: 5
+  batch_size_train: 16
+  batch_size_eval: 32
+  learning_rate: 1.5e-5
+  warmup_ratio: 0.1
+  weight_decay: 0.05
+  gradient_accumulation_steps: 1
+  fp16: true                         # RTX 4050 support fp16 (mixed precision)
+  logging_steps: 50
+  eval_strategy: "epoch"
+  save_strategy: "epoch"
+  save_total_limit: 1                # ⚡ Hemat penyimpanan: hanya simpan 1 checkpoint terbaik
+  load_best_model_at_end: true
+  metric_for_best_model: "f1_macro"  # Macro F1 lebih fair untuk evaluasi
+  greater_is_better: true
+  early_stopping_patience: 2
+  max_grad_norm: 1.0                 # Gradient clipping untuk stabilitas
+
+data:
+  raw_dir: "dataset"
+  processed_dir: "data/processed"
+  train_file: "train.csv"
+  val_file: "val.csv"
+  test_file: "test.csv"
+  train_ratio: 0.80
+  val_ratio: 0.10
+  test_ratio: 0.10
+  random_seed: 42
+  text_column: "text"
+  label_column: "label_encoded"
+  augmentation:
+    enabled: true
+    fn_hatespeech: "dataset/FN/data.csv"                # Hate speech Indonesia (13K tweets)
+    fn_max_samples: 2000                                 # Batas sampel bully dari FN (null = semua ~7K)
+    fp_hard_negatives: "dataset/FP/Dataset_False_Positive_3kolom.csv"   # Hard-negatives buatan manual (opsional)
+    codemixed: "data/processed/codemixed_samples.csv"    # Code-mixed Indo-English (173 sampel)
+    contrastive_dataset: "dataset/contrastive_cyberbullying_starter_dataset.csv"  # Contrastive pairs
+    cyberbullying_1000: "dataset/cyberbullying_dataset_1000.csv"                  # Cyberbullying 1000
+    fn_fp_reduction: "dataset/dataset_fn_fp_reduction.csv"                        # Sarkasme + kata kasar aman
+
+
+
+kfold:
+  enabled: true
+  n_splits: 5                          # Jumlah fold (K=5 standar)
+  random_seed: 42                      # Seed untuk reprodusibilitas fold split
+
+inference:
+  confidence_ignore: 0.70            # < nilai ini → abaikan
+  confidence_flag: 0.85              # 0.70–0.85 → log ke moderator
+                                     # > 0.85 → aksi otomatis
+
+outputs:
+  results_dir: "outputs"
+  confusion_matrix: "outputs/confusion_matrix.png"
+  report_file: "outputs/evaluation_report.txt"
+  training_history: "outputs/training_results.json"

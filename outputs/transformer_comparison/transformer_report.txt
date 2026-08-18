@@ -1,0 +1,62 @@
+================================================================================
+LAPORAN PERBANDINGAN MODEL TRANSFORMER — CYBERBULLYING DETECTION
+Tanggal: 2026-07-27 23:14:41
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+  VALIDATION SET RESULTS
+────────────────────────────────────────────────────────────────────────────────
+Model Name                       Type                       Acc  F1_bin  F1_mac    Prec     Rec
+-----------------------------------------------------------------------------------------------
+XLM-RoBERTa Base                 Multilingual            0.8519  0.8678  0.8498  0.8693  0.8663 ★
+IndoBERT Base (IndoBenchmark)    Indonesian Monolingual  0.8423  0.8591  0.8400  0.8613  0.8569
+mBERT Base (Multilingual)        Multilingual            0.8332  0.8498  0.8311  0.8584  0.8415
+IndoBERT Uncased (IndoLEM)       Indonesian Monolingual  0.8154  0.8358  0.8125  0.8343  0.8372
+
+  ★ Best (validation): XLM-RoBERTa Base — F1 Macro: 0.8498
+
+────────────────────────────────────────────────────────────────────────────────
+  TEST SET RESULTS
+────────────────────────────────────────────────────────────────────────────────
+Model Name                       Type                       Acc  F1_bin  F1_mac    Prec     Rec
+-----------------------------------------------------------------------------------------------
+XLM-RoBERTa Base                 Multilingual            0.8423  0.8558  0.8409  0.8680  0.8439 ★
+IndoBERT Base (IndoBenchmark)    Indonesian Monolingual  0.8269  0.8448  0.8246  0.8398  0.8500
+mBERT Base (Multilingual)        Multilingual            0.8216  0.8400  0.8192  0.8353  0.8448
+IndoBERT Uncased (IndoLEM)       Indonesian Monolingual  0.8130  0.8343  0.8098  0.8199  0.8491
+
+  ★ Best (test): XLM-RoBERTa Base — F1 Macro: 0.8409
+
+════════════════════════════════════════════════════════════════════════════════
+CONFUSION MATRICES (TEST SET)
+════════════════════════════════════════════════════════════════════════════════
+
+  XLM-RoBERTa Base (Multilingual):
+              Pred:0   Pred:1
+  True:0        779      148
+  True:1        180      973
+
+  IndoBERT Base (IndoBenchmark) (Indonesian Monolingual):
+              Pred:0   Pred:1
+  True:0        740      187
+  True:1        173      980
+
+  mBERT Base (Multilingual) (Multilingual):
+              Pred:0   Pred:1
+  True:0        735      192
+  True:1        179      974
+
+  IndoBERT Uncased (IndoLEM) (Indonesian Monolingual):
+              Pred:0   Pred:1
+  True:0        712      215
+  True:1        174      979
+
+════════════════════════════════════════════════════════════════════════════════
+PERFORMANCE & SPEED
+════════════════════════════════════════════════════════════════════════════════
+  XLM-RoBERTa Base                    Train:    0.0s | Infer Speed:   839.2 samples/s
+  IndoBERT Base (IndoBenchmark)       Train:    0.0s | Infer Speed:   854.1 samples/s
+  mBERT Base (Multilingual)           Train:    0.0s | Infer Speed:   700.3 samples/s
+  IndoBERT Uncased (IndoLEM)          Train:    0.0s | Infer Speed:   752.6 samples/s
+
+================================================================================

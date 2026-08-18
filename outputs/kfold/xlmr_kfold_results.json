@@ -1,0 +1,437 @@
+{
+  "timestamp": "2026-07-10T01:27:53.338406",
+  "model_name": "xlm-roberta-base",
+  "n_splits": 5,
+  "seed": 42,
+  "device": "cuda",
+  "config": {
+    "epochs": 5,
+    "learning_rate": 1.5e-05,
+    "batch_size": 16,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.05,
+    "fp16": true,
+    "max_grad_norm": 1.0,
+    "early_stopping": 2
+  },
+  "data": {
+    "development_samples": 24951,
+    "test_samples": 2080
+  },
+  "validation_per_fold": [
+    {
+      "accuracy": 0.8217,
+      "precision_binary": 0.8543,
+      "recall_binary": 0.7878,
+      "f1_binary": 0.8197,
+      "precision_macro": 0.8233,
+      "recall_macro": 0.8227,
+      "f1_macro": 0.8217,
+      "f1_weighted": 0.8216,
+      "confusion_matrix": [
+        [
+          2078,
+          345
+        ],
+        [
+          545,
+          2023
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.816,
+      "precision_binary": 0.8383,
+      "recall_binary": 0.7959,
+      "f1_binary": 0.8165,
+      "precision_macro": 0.8165,
+      "recall_macro": 0.8166,
+      "f1_macro": 0.816,
+      "f1_weighted": 0.816,
+      "confusion_matrix": [
+        [
+          2029,
+          394
+        ],
+        [
+          524,
+          2043
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8277,
+      "precision_binary": 0.8335,
+      "recall_binary": 0.8309,
+      "f1_binary": 0.8322,
+      "precision_macro": 0.8275,
+      "recall_macro": 0.8276,
+      "f1_macro": 0.8275,
+      "f1_weighted": 0.8277,
+      "confusion_matrix": [
+        [
+          1997,
+          426
+        ],
+        [
+          434,
+          2133
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.823,
+      "precision_binary": 0.8321,
+      "recall_binary": 0.822,
+      "f1_binary": 0.827,
+      "precision_macro": 0.8229,
+      "recall_macro": 0.8231,
+      "f1_macro": 0.823,
+      "f1_weighted": 0.8231,
+      "confusion_matrix": [
+        [
+          1996,
+          426
+        ],
+        [
+          457,
+          2111
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8257,
+      "precision_binary": 0.8353,
+      "recall_binary": 0.8236,
+      "f1_binary": 0.8294,
+      "precision_macro": 0.8255,
+      "recall_macro": 0.8257,
+      "f1_macro": 0.8256,
+      "f1_weighted": 0.8257,
+      "confusion_matrix": [
+        [
+          2005,
+          417
+        ],
+        [
+          453,
+          2115
+        ]
+      ]
+    }
+  ],
+  "test_per_fold": [
+    {
+      "accuracy": 0.8159,
+      "precision_binary": 0.84,
+      "recall_binary": 0.7972,
+      "f1_binary": 0.8181,
+      "precision_macro": 0.8162,
+      "recall_macro": 0.8166,
+      "f1_macro": 0.8158,
+      "f1_weighted": 0.8159,
+      "confusion_matrix": [
+        [
+          836,
+          164
+        ],
+        [
+          219,
+          861
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8173,
+      "precision_binary": 0.8359,
+      "recall_binary": 0.8065,
+      "f1_binary": 0.8209,
+      "precision_macro": 0.8173,
+      "recall_macro": 0.8177,
+      "f1_macro": 0.8172,
+      "f1_weighted": 0.8174,
+      "confusion_matrix": [
+        [
+          829,
+          171
+        ],
+        [
+          209,
+          871
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8264,
+      "precision_binary": 0.8382,
+      "recall_binary": 0.825,
+      "f1_binary": 0.8315,
+      "precision_macro": 0.8262,
+      "recall_macro": 0.8265,
+      "f1_macro": 0.8263,
+      "f1_weighted": 0.8265,
+      "confusion_matrix": [
+        [
+          828,
+          172
+        ],
+        [
+          189,
+          891
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8173,
+      "precision_binary": 0.8259,
+      "recall_binary": 0.8213,
+      "f1_binary": 0.8236,
+      "precision_macro": 0.817,
+      "recall_macro": 0.8171,
+      "f1_macro": 0.8171,
+      "f1_weighted": 0.8173,
+      "confusion_matrix": [
+        [
+          813,
+          187
+        ],
+        [
+          193,
+          887
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8125,
+      "precision_binary": 0.8194,
+      "recall_binary": 0.8194,
+      "f1_binary": 0.8194,
+      "precision_macro": 0.8122,
+      "recall_macro": 0.8122,
+      "f1_macro": 0.8122,
+      "f1_weighted": 0.8125,
+      "confusion_matrix": [
+        [
+          805,
+          195
+        ],
+        [
+          195,
+          885
+        ]
+      ]
+    }
+  ],
+  "validation_aggregate": {
+    "accuracy": {
+      "mean": 0.8228,
+      "std": 0.004,
+      "min": 0.816,
+      "max": 0.8277,
+      "per_fold": [
+        0.8217,
+        0.816,
+        0.8277,
+        0.823,
+        0.8257
+      ]
+    },
+    "precision_binary": {
+      "mean": 0.8387,
+      "std": 0.0081,
+      "min": 0.8321,
+      "max": 0.8543,
+      "per_fold": [
+        0.8543,
+        0.8383,
+        0.8335,
+        0.8321,
+        0.8353
+      ]
+    },
+    "recall_binary": {
+      "mean": 0.812,
+      "std": 0.017,
+      "min": 0.7878,
+      "max": 0.8309,
+      "per_fold": [
+        0.7878,
+        0.7959,
+        0.8309,
+        0.822,
+        0.8236
+      ]
+    },
+    "f1_binary": {
+      "mean": 0.825,
+      "std": 0.0059,
+      "min": 0.8165,
+      "max": 0.8322,
+      "per_fold": [
+        0.8197,
+        0.8165,
+        0.8322,
+        0.827,
+        0.8294
+      ]
+    },
+    "precision_macro": {
+      "mean": 0.8231,
+      "std": 0.0037,
+      "min": 0.8165,
+      "max": 0.8275,
+      "per_fold": [
+        0.8233,
+        0.8165,
+        0.8275,
+        0.8229,
+        0.8255
+      ]
+    },
+    "recall_macro": {
+      "mean": 0.8231,
+      "std": 0.0037,
+      "min": 0.8166,
+      "max": 0.8276,
+      "per_fold": [
+        0.8227,
+        0.8166,
+        0.8276,
+        0.8231,
+        0.8257
+      ]
+    },
+    "f1_macro": {
+      "mean": 0.8228,
+      "std": 0.0039,
+      "min": 0.816,
+      "max": 0.8275,
+      "per_fold": [
+        0.8217,
+        0.816,
+        0.8275,
+        0.823,
+        0.8256
+      ]
+    },
+    "f1_weighted": {
+      "mean": 0.8228,
+      "std": 0.004,
+      "min": 0.816,
+      "max": 0.8277,
+      "per_fold": [
+        0.8216,
+        0.816,
+        0.8277,
+        0.8231,
+        0.8257
+      ]
+    }
+  },
+  "test_aggregate": {
+    "accuracy": {
+      "mean": 0.8179,
+      "std": 0.0046,
+      "min": 0.8125,
+      "max": 0.8264,
+      "per_fold": [
+        0.8159,
+        0.8173,
+        0.8264,
+        0.8173,
+        0.8125
+      ]
+    },
+    "precision_binary": {
+      "mean": 0.8319,
+      "std": 0.0079,
+      "min": 0.8194,
+      "max": 0.84,
+      "per_fold": [
+        0.84,
+        0.8359,
+        0.8382,
+        0.8259,
+        0.8194
+      ]
+    },
+    "recall_binary": {
+      "mean": 0.8139,
+      "std": 0.0104,
+      "min": 0.7972,
+      "max": 0.825,
+      "per_fold": [
+        0.7972,
+        0.8065,
+        0.825,
+        0.8213,
+        0.8194
+      ]
+    },
+    "f1_binary": {
+      "mean": 0.8227,
+      "std": 0.0048,
+      "min": 0.8181,
+      "max": 0.8315,
+      "per_fold": [
+        0.8181,
+        0.8209,
+        0.8315,
+        0.8236,
+        0.8194
+      ]
+    },
+    "precision_macro": {
+      "mean": 0.8178,
+      "std": 0.0046,
+      "min": 0.8122,
+      "max": 0.8262,
+      "per_fold": [
+        0.8162,
+        0.8173,
+        0.8262,
+        0.817,
+        0.8122
+      ]
+    },
+    "recall_macro": {
+      "mean": 0.818,
+      "std": 0.0047,
+      "min": 0.8122,
+      "max": 0.8265,
+      "per_fold": [
+        0.8166,
+        0.8177,
+        0.8265,
+        0.8171,
+        0.8122
+      ]
+    },
+    "f1_macro": {
+      "mean": 0.8177,
+      "std": 0.0047,
+      "min": 0.8122,
+      "max": 0.8263,
+      "per_fold": [
+        0.8158,
+        0.8172,
+        0.8263,
+        0.8171,
+        0.8122
+      ]
+    },
+    "f1_weighted": {
+      "mean": 0.8179,
+      "std": 0.0046,
+      "min": 0.8125,
+      "max": 0.8265,
+      "per_fold": [
+        0.8159,
+        0.8174,
+        0.8265,
+        0.8173,
+        0.8125
+      ]
+    }
+  }
+}

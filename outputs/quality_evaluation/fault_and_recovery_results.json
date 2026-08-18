@@ -1,0 +1,12 @@
+{
+  "target_container": "cyberbully_api",
+  "fault_injection_applied": true,
+  "error_response_during_fault": {
+    "success": false,
+    "http_code": 0,
+    "error_detail": "Server disconnected without sending a response."
+  },
+  "recovery_successful": true,
+  "mttr_seconds": 5.89,
+  "timestamp": "2026-08-05T12:49:51.522754"
+}

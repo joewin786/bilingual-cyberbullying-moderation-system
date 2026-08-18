@@ -1,0 +1,317 @@
+{
+  "timestamp": "2026-07-29T22:59:21.965064",
+  "test_type": "McNemar's Test",
+  "test_set_size": 2080,
+  "alpha": 0.05,
+  "n_comparisons": 10,
+  "bonferroni_alpha": 0.005,
+  "models": [
+    "XLM-RoBERTa Base",
+    "IndoBERT Base (IndoBenchmark)",
+    "mBERT Base (Multilingual)",
+    "IndoBERT Uncased (IndoLEM)",
+    "XLM-RoBERTa (fine-tuned)"
+  ],
+  "results": [
+    {
+      "model_a": "IndoBERT Base (IndoBenchmark)",
+      "model_b": "IndoBERT Uncased (IndoLEM)",
+      "accuracy_a": 0.822596,
+      "accuracy_b": 0.817308,
+      "contingency_table": [
+        [
+          1578,
+          133
+        ],
+        [
+          122,
+          247
+        ]
+      ],
+      "n_both_correct": 1578,
+      "n_a_correct_b_wrong": 133,
+      "n_a_wrong_b_correct": 122,
+      "n_both_wrong": 247,
+      "discordant_total": 255,
+      "chi2_statistic": 0.3922,
+      "p_value": 0.531168,
+      "p_value_exact": null,
+      "method": "chi2_corrected",
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.005,
+      "significant_without_correction": false,
+      "significant_with_bonferroni": false,
+      "better_model": "IndoBERT Base (IndoBenchmark)"
+    },
+    {
+      "model_a": "IndoBERT Base (IndoBenchmark)",
+      "model_b": "XLM-RoBERTa (fine-tuned)",
+      "accuracy_a": 0.822596,
+      "accuracy_b": 0.842308,
+      "contingency_table": [
+        [
+          1586,
+          125
+        ],
+        [
+          166,
+          203
+        ]
+      ],
+      "n_both_correct": 1586,
+      "n_a_correct_b_wrong": 125,
+      "n_a_wrong_b_correct": 166,
+      "n_both_wrong": 203,
+      "discordant_total": 291,
+      "chi2_statistic": 5.4983,
+      "p_value": 0.019035,
+      "p_value_exact": null,
+      "method": "chi2_corrected",
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.005,
+      "significant_without_correction": true,
+      "significant_with_bonferroni": false,
+      "better_model": "XLM-RoBERTa (fine-tuned)"
+    },
+    {
+      "model_a": "IndoBERT Base (IndoBenchmark)",
+      "model_b": "XLM-RoBERTa Base",
+      "accuracy_a": 0.822596,
+      "accuracy_b": 0.827885,
+      "contingency_table": [
+        [
+          1577,
+          134
+        ],
+        [
+          145,
+          224
+        ]
+      ],
+      "n_both_correct": 1577,
+      "n_a_correct_b_wrong": 134,
+      "n_a_wrong_b_correct": 145,
+      "n_both_wrong": 224,
+      "discordant_total": 279,
+      "chi2_statistic": 0.3584,
+      "p_value": 0.549383,
+      "p_value_exact": null,
+      "method": "chi2_corrected",
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.005,
+      "significant_without_correction": false,
+      "significant_with_bonferroni": false,
+      "better_model": "XLM-RoBERTa Base"
+    },
+    {
+      "model_a": "IndoBERT Base (IndoBenchmark)",
+      "model_b": "mBERT Base (Multilingual)",
+      "accuracy_a": 0.822596,
+      "accuracy_b": 0.817788,
+      "contingency_table": [
+        [
+          1546,
+          165
+        ],
+        [
+          155,
+          214
+        ]
+      ],
+      "n_both_correct": 1546,
+      "n_a_correct_b_wrong": 165,
+      "n_a_wrong_b_correct": 155,
+      "n_both_wrong": 214,
+      "discordant_total": 320,
+      "chi2_statistic": 0.2531,
+      "p_value": 0.614883,
+      "p_value_exact": null,
+      "method": "chi2_corrected",
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.005,
+      "significant_without_correction": false,
+      "significant_with_bonferroni": false,
+      "better_model": "IndoBERT Base (IndoBenchmark)"
+    },
+    {
+      "model_a": "IndoBERT Uncased (IndoLEM)",
+      "model_b": "XLM-RoBERTa (fine-tuned)",
+      "accuracy_a": 0.817308,
+      "accuracy_b": 0.842308,
+      "contingency_table": [
+        [
+          1588,
+          112
+        ],
+        [
+          164,
+          216
+        ]
+      ],
+      "n_both_correct": 1588,
+      "n_a_correct_b_wrong": 112,
+      "n_a_wrong_b_correct": 164,
+      "n_both_wrong": 216,
+      "discordant_total": 276,
+      "chi2_statistic": 9.4239,
+      "p_value": 0.002142,
+      "p_value_exact": null,
+      "method": "chi2_corrected",
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.005,
+      "significant_without_correction": true,
+      "significant_with_bonferroni": true,
+      "better_model": "XLM-RoBERTa (fine-tuned)"
+    },
+    {
+      "model_a": "IndoBERT Uncased (IndoLEM)",
+      "model_b": "XLM-RoBERTa Base",
+      "accuracy_a": 0.817308,
+      "accuracy_b": 0.827885,
+      "contingency_table": [
+        [
+          1575,
+          125
+        ],
+        [
+          147,
+          233
+        ]
+      ],
+      "n_both_correct": 1575,
+      "n_a_correct_b_wrong": 125,
+      "n_a_wrong_b_correct": 147,
+      "n_both_wrong": 233,
+      "discordant_total": 272,
+      "chi2_statistic": 1.6213,
+      "p_value": 0.202907,
+      "p_value_exact": null,
+      "method": "chi2_corrected",
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.005,
+      "significant_without_correction": false,
+      "significant_with_bonferroni": false,
+      "better_model": "XLM-RoBERTa Base"
+    },
+    {
+      "model_a": "IndoBERT Uncased (IndoLEM)",
+      "model_b": "mBERT Base (Multilingual)",
+      "accuracy_a": 0.817308,
+      "accuracy_b": 0.817788,
+      "contingency_table": [
+        [
+          1549,
+          151
+        ],
+        [
+          152,
+          228
+        ]
+      ],
+      "n_both_correct": 1549,
+      "n_a_correct_b_wrong": 151,
+      "n_a_wrong_b_correct": 152,
+      "n_both_wrong": 228,
+      "discordant_total": 303,
+      "chi2_statistic": 0.0,
+      "p_value": 1.0,
+      "p_value_exact": null,
+      "method": "chi2_corrected",
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.005,
+      "significant_without_correction": false,
+      "significant_with_bonferroni": false,
+      "better_model": "mBERT Base (Multilingual)"
+    },
+    {
+      "model_a": "XLM-RoBERTa (fine-tuned)",
+      "model_b": "XLM-RoBERTa Base",
+      "accuracy_a": 0.842308,
+      "accuracy_b": 0.827885,
+      "contingency_table": [
+        [
+          1648,
+          104
+        ],
+        [
+          74,
+          254
+        ]
+      ],
+      "n_both_correct": 1648,
+      "n_a_correct_b_wrong": 104,
+      "n_a_wrong_b_correct": 74,
+      "n_both_wrong": 254,
+      "discordant_total": 178,
+      "chi2_statistic": 4.7247,
+      "p_value": 0.029732,
+      "p_value_exact": null,
+      "method": "chi2_corrected",
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.005,
+      "significant_without_correction": true,
+      "significant_with_bonferroni": false,
+      "better_model": "XLM-RoBERTa (fine-tuned)"
+    },
+    {
+      "model_a": "XLM-RoBERTa (fine-tuned)",
+      "model_b": "mBERT Base (Multilingual)",
+      "accuracy_a": 0.842308,
+      "accuracy_b": 0.817788,
+      "contingency_table": [
+        [
+          1571,
+          181
+        ],
+        [
+          130,
+          198
+        ]
+      ],
+      "n_both_correct": 1571,
+      "n_a_correct_b_wrong": 181,
+      "n_a_wrong_b_correct": 130,
+      "n_both_wrong": 198,
+      "discordant_total": 311,
+      "chi2_statistic": 8.0386,
+      "p_value": 0.004579,
+      "p_value_exact": null,
+      "method": "chi2_corrected",
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.005,
+      "significant_without_correction": true,
+      "significant_with_bonferroni": true,
+      "better_model": "XLM-RoBERTa (fine-tuned)"
+    },
+    {
+      "model_a": "XLM-RoBERTa Base",
+      "model_b": "mBERT Base (Multilingual)",
+      "accuracy_a": 0.827885,
+      "accuracy_b": 0.817788,
+      "contingency_table": [
+        [
+          1563,
+          159
+        ],
+        [
+          138,
+          220
+        ]
+      ],
+      "n_both_correct": 1563,
+      "n_a_correct_b_wrong": 159,
+      "n_a_wrong_b_correct": 138,
+      "n_both_wrong": 220,
+      "discordant_total": 297,
+      "chi2_statistic": 1.3468,
+      "p_value": 0.245838,
+      "p_value_exact": null,
+      "method": "chi2_corrected",
+      "alpha": 0.05,
+      "alpha_bonferroni": 0.005,
+      "significant_without_correction": false,
+      "significant_with_bonferroni": false,
+      "better_model": "XLM-RoBERTa Base"
+    }
+  ]
+}

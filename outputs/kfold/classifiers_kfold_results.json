@@ -1,0 +1,1695 @@
+{
+  "timestamp": "2026-07-10T01:36:21.370227",
+  "n_splits": 5,
+  "seed": 42,
+  "data": {
+    "development_samples": 24951,
+    "test_samples": 2080
+  },
+  "tfidf_config": {
+    "max_features": 20000,
+    "ngram_range": [
+      1,
+      2
+    ]
+  },
+  "embedding_model": "xlm-roberta-base",
+  "classifiers": {
+    "Naive Bayes": {
+      "feature_type": "TF-IDF",
+      "validation_per_fold": [
+        {
+          "accuracy": 0.7596,
+          "precision_binary": 0.7518,
+          "recall_binary": 0.7952,
+          "f1_binary": 0.7729,
+          "precision_macro": 0.7603,
+          "recall_macro": 0.7585,
+          "f1_macro": 0.7587,
+          "f1_weighted": 0.7591,
+          "confusion_matrix": [
+            [
+              1749,
+              674
+            ],
+            [
+              526,
+              2042
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7471,
+          "precision_binary": 0.7448,
+          "recall_binary": 0.7733,
+          "f1_binary": 0.7588,
+          "precision_macro": 0.7473,
+          "recall_macro": 0.7463,
+          "f1_macro": 0.7465,
+          "f1_weighted": 0.7469,
+          "confusion_matrix": [
+            [
+              1743,
+              680
+            ],
+            [
+              582,
+              1985
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7597,
+          "precision_binary": 0.7639,
+          "recall_binary": 0.7713,
+          "f1_binary": 0.7676,
+          "precision_macro": 0.7596,
+          "recall_macro": 0.7594,
+          "f1_macro": 0.7594,
+          "f1_weighted": 0.7597,
+          "confusion_matrix": [
+            [
+              1811,
+              612
+            ],
+            [
+              587,
+              1980
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7411,
+          "precision_binary": 0.7415,
+          "recall_binary": 0.7629,
+          "f1_binary": 0.752,
+          "precision_macro": 0.7411,
+          "recall_macro": 0.7404,
+          "f1_macro": 0.7406,
+          "f1_weighted": 0.7409,
+          "confusion_matrix": [
+            [
+              1739,
+              683
+            ],
+            [
+              609,
+              1959
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7631,
+          "precision_binary": 0.755,
+          "recall_binary": 0.7991,
+          "f1_binary": 0.7764,
+          "precision_macro": 0.7639,
+          "recall_macro": 0.762,
+          "f1_macro": 0.7623,
+          "f1_weighted": 0.7627,
+          "confusion_matrix": [
+            [
+              1756,
+              666
+            ],
+            [
+              516,
+              2052
+            ]
+          ]
+        }
+      ],
+      "test_per_fold": [
+        {
+          "accuracy": 0.7486,
+          "precision_binary": 0.752,
+          "recall_binary": 0.7694,
+          "f1_binary": 0.7606,
+          "precision_macro": 0.7483,
+          "recall_macro": 0.7477,
+          "f1_macro": 0.7479,
+          "f1_weighted": 0.7484,
+          "confusion_matrix": [
+            [
+              726,
+              274
+            ],
+            [
+              249,
+              831
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7409,
+          "precision_binary": 0.7521,
+          "recall_binary": 0.7472,
+          "f1_binary": 0.7497,
+          "precision_macro": 0.7405,
+          "recall_macro": 0.7406,
+          "f1_macro": 0.7405,
+          "f1_weighted": 0.7409,
+          "confusion_matrix": [
+            [
+              734,
+              266
+            ],
+            [
+              273,
+              807
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7365,
+          "precision_binary": 0.7472,
+          "recall_binary": 0.7444,
+          "f1_binary": 0.7458,
+          "precision_macro": 0.7362,
+          "recall_macro": 0.7362,
+          "f1_macro": 0.7362,
+          "f1_weighted": 0.7366,
+          "confusion_matrix": [
+            [
+              728,
+              272
+            ],
+            [
+              276,
+              804
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7399,
+          "precision_binary": 0.755,
+          "recall_binary": 0.7389,
+          "f1_binary": 0.7468,
+          "precision_macro": 0.7397,
+          "recall_macro": 0.7399,
+          "f1_macro": 0.7397,
+          "f1_weighted": 0.74,
+          "confusion_matrix": [
+            [
+              741,
+              259
+            ],
+            [
+              282,
+              798
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7409,
+          "precision_binary": 0.7479,
+          "recall_binary": 0.7556,
+          "f1_binary": 0.7517,
+          "precision_macro": 0.7405,
+          "recall_macro": 0.7403,
+          "f1_macro": 0.7404,
+          "f1_weighted": 0.7408,
+          "confusion_matrix": [
+            [
+              725,
+              275
+            ],
+            [
+              264,
+              816
+            ]
+          ]
+        }
+      ],
+      "validation_aggregate": {
+        "accuracy": {
+          "mean": 0.7541,
+          "std": 0.0085,
+          "min": 0.7411,
+          "max": 0.7631,
+          "per_fold": [
+            0.7596,
+            0.7471,
+            0.7597,
+            0.7411,
+            0.7631
+          ]
+        },
+        "precision_binary": {
+          "mean": 0.7514,
+          "std": 0.0079,
+          "min": 0.7415,
+          "max": 0.7639,
+          "per_fold": [
+            0.7518,
+            0.7448,
+            0.7639,
+            0.7415,
+            0.755
+          ]
+        },
+        "recall_binary": {
+          "mean": 0.7804,
+          "std": 0.0142,
+          "min": 0.7629,
+          "max": 0.7991,
+          "per_fold": [
+            0.7952,
+            0.7733,
+            0.7713,
+            0.7629,
+            0.7991
+          ]
+        },
+        "f1_binary": {
+          "mean": 0.7655,
+          "std": 0.009,
+          "min": 0.752,
+          "max": 0.7764,
+          "per_fold": [
+            0.7729,
+            0.7588,
+            0.7676,
+            0.752,
+            0.7764
+          ]
+        },
+        "precision_macro": {
+          "mean": 0.7544,
+          "std": 0.0087,
+          "min": 0.7411,
+          "max": 0.7639,
+          "per_fold": [
+            0.7603,
+            0.7473,
+            0.7596,
+            0.7411,
+            0.7639
+          ]
+        },
+        "recall_macro": {
+          "mean": 0.7533,
+          "std": 0.0084,
+          "min": 0.7404,
+          "max": 0.762,
+          "per_fold": [
+            0.7585,
+            0.7463,
+            0.7594,
+            0.7404,
+            0.762
+          ]
+        },
+        "f1_macro": {
+          "mean": 0.7535,
+          "std": 0.0084,
+          "min": 0.7406,
+          "max": 0.7623,
+          "per_fold": [
+            0.7587,
+            0.7465,
+            0.7594,
+            0.7406,
+            0.7623
+          ]
+        },
+        "f1_weighted": {
+          "mean": 0.7539,
+          "std": 0.0084,
+          "min": 0.7409,
+          "max": 0.7627,
+          "per_fold": [
+            0.7591,
+            0.7469,
+            0.7597,
+            0.7409,
+            0.7627
+          ]
+        }
+      },
+      "test_aggregate": {
+        "accuracy": {
+          "mean": 0.7414,
+          "std": 0.004,
+          "min": 0.7365,
+          "max": 0.7486,
+          "per_fold": [
+            0.7486,
+            0.7409,
+            0.7365,
+            0.7399,
+            0.7409
+          ]
+        },
+        "precision_binary": {
+          "mean": 0.7508,
+          "std": 0.0029,
+          "min": 0.7472,
+          "max": 0.755,
+          "per_fold": [
+            0.752,
+            0.7521,
+            0.7472,
+            0.755,
+            0.7479
+          ]
+        },
+        "recall_binary": {
+          "mean": 0.7511,
+          "std": 0.0106,
+          "min": 0.7389,
+          "max": 0.7694,
+          "per_fold": [
+            0.7694,
+            0.7472,
+            0.7444,
+            0.7389,
+            0.7556
+          ]
+        },
+        "f1_binary": {
+          "mean": 0.7509,
+          "std": 0.0053,
+          "min": 0.7458,
+          "max": 0.7606,
+          "per_fold": [
+            0.7606,
+            0.7497,
+            0.7458,
+            0.7468,
+            0.7517
+          ]
+        },
+        "precision_macro": {
+          "mean": 0.741,
+          "std": 0.004,
+          "min": 0.7362,
+          "max": 0.7483,
+          "per_fold": [
+            0.7483,
+            0.7405,
+            0.7362,
+            0.7397,
+            0.7405
+          ]
+        },
+        "recall_macro": {
+          "mean": 0.7409,
+          "std": 0.0037,
+          "min": 0.7362,
+          "max": 0.7477,
+          "per_fold": [
+            0.7477,
+            0.7406,
+            0.7362,
+            0.7399,
+            0.7403
+          ]
+        },
+        "f1_macro": {
+          "mean": 0.7409,
+          "std": 0.0038,
+          "min": 0.7362,
+          "max": 0.7479,
+          "per_fold": [
+            0.7479,
+            0.7405,
+            0.7362,
+            0.7397,
+            0.7404
+          ]
+        },
+        "f1_weighted": {
+          "mean": 0.7413,
+          "std": 0.0039,
+          "min": 0.7366,
+          "max": 0.7484,
+          "per_fold": [
+            0.7484,
+            0.7409,
+            0.7366,
+            0.74,
+            0.7408
+          ]
+        }
+      }
+    },
+    "SVM Linear": {
+      "feature_type": "TF-IDF",
+      "validation_per_fold": [
+        {
+          "accuracy": 0.7722,
+          "precision_binary": 0.7798,
+          "recall_binary": 0.7765,
+          "f1_binary": 0.7781,
+          "precision_macro": 0.772,
+          "recall_macro": 0.7721,
+          "f1_macro": 0.772,
+          "f1_weighted": 0.7722,
+          "confusion_matrix": [
+            [
+              1860,
+              563
+            ],
+            [
+              574,
+              1994
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7661,
+          "precision_binary": 0.7827,
+          "recall_binary": 0.755,
+          "f1_binary": 0.7686,
+          "precision_macro": 0.7663,
+          "recall_macro": 0.7665,
+          "f1_macro": 0.7661,
+          "f1_weighted": 0.7662,
+          "confusion_matrix": [
+            [
+              1885,
+              538
+            ],
+            [
+              629,
+              1938
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7774,
+          "precision_binary": 0.795,
+          "recall_binary": 0.7643,
+          "f1_binary": 0.7793,
+          "precision_macro": 0.7775,
+          "recall_macro": 0.7777,
+          "f1_macro": 0.7773,
+          "f1_weighted": 0.7774,
+          "confusion_matrix": [
+            [
+              1917,
+              506
+            ],
+            [
+              605,
+              1962
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7739,
+          "precision_binary": 0.7903,
+          "recall_binary": 0.7632,
+          "f1_binary": 0.7765,
+          "precision_macro": 0.774,
+          "recall_macro": 0.7743,
+          "f1_macro": 0.7739,
+          "f1_weighted": 0.774,
+          "confusion_matrix": [
+            [
+              1902,
+              520
+            ],
+            [
+              608,
+              1960
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7862,
+          "precision_binary": 0.7926,
+          "recall_binary": 0.7917,
+          "f1_binary": 0.7921,
+          "precision_macro": 0.786,
+          "recall_macro": 0.786,
+          "f1_macro": 0.786,
+          "f1_weighted": 0.7862,
+          "confusion_matrix": [
+            [
+              1890,
+              532
+            ],
+            [
+              535,
+              2033
+            ]
+          ]
+        }
+      ],
+      "test_per_fold": [
+        {
+          "accuracy": 0.7702,
+          "precision_binary": 0.7894,
+          "recall_binary": 0.7602,
+          "f1_binary": 0.7745,
+          "precision_macro": 0.7702,
+          "recall_macro": 0.7706,
+          "f1_macro": 0.7701,
+          "f1_weighted": 0.7703,
+          "confusion_matrix": [
+            [
+              781,
+              219
+            ],
+            [
+              259,
+              821
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7663,
+          "precision_binary": 0.7964,
+          "recall_binary": 0.7389,
+          "f1_binary": 0.7666,
+          "precision_macro": 0.7674,
+          "recall_macro": 0.7674,
+          "f1_macro": 0.7663,
+          "f1_weighted": 0.7664,
+          "confusion_matrix": [
+            [
+              796,
+              204
+            ],
+            [
+              282,
+              798
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7596,
+          "precision_binary": 0.7843,
+          "recall_binary": 0.7407,
+          "f1_binary": 0.7619,
+          "precision_macro": 0.7601,
+          "recall_macro": 0.7604,
+          "f1_macro": 0.7596,
+          "f1_weighted": 0.7597,
+          "confusion_matrix": [
+            [
+              780,
+              220
+            ],
+            [
+              280,
+              800
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7582,
+          "precision_binary": 0.7848,
+          "recall_binary": 0.7361,
+          "f1_binary": 0.7597,
+          "precision_macro": 0.7588,
+          "recall_macro": 0.7591,
+          "f1_macro": 0.7582,
+          "f1_weighted": 0.7582,
+          "confusion_matrix": [
+            [
+              782,
+              218
+            ],
+            [
+              285,
+              795
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.7577,
+          "precision_binary": 0.7824,
+          "recall_binary": 0.7389,
+          "f1_binary": 0.76,
+          "precision_macro": 0.7582,
+          "recall_macro": 0.7584,
+          "f1_macro": 0.7577,
+          "f1_weighted": 0.7578,
+          "confusion_matrix": [
+            [
+              778,
+              222
+            ],
+            [
+              282,
+              798
+            ]
+          ]
+        }
+      ],
+      "validation_aggregate": {
+        "accuracy": {
+          "mean": 0.7752,
+          "std": 0.0066,
+          "min": 0.7661,
+          "max": 0.7862,
+          "per_fold": [
+            0.7722,
+            0.7661,
+            0.7774,
+            0.7739,
+            0.7862
+          ]
+        },
+        "precision_binary": {
+          "mean": 0.7881,
+          "std": 0.0058,
+          "min": 0.7798,
+          "max": 0.795,
+          "per_fold": [
+            0.7798,
+            0.7827,
+            0.795,
+            0.7903,
+            0.7926
+          ]
+        },
+        "recall_binary": {
+          "mean": 0.7701,
+          "std": 0.0128,
+          "min": 0.755,
+          "max": 0.7917,
+          "per_fold": [
+            0.7765,
+            0.755,
+            0.7643,
+            0.7632,
+            0.7917
+          ]
+        },
+        "f1_binary": {
+          "mean": 0.7789,
+          "std": 0.0076,
+          "min": 0.7686,
+          "max": 0.7921,
+          "per_fold": [
+            0.7781,
+            0.7686,
+            0.7793,
+            0.7765,
+            0.7921
+          ]
+        },
+        "precision_macro": {
+          "mean": 0.7752,
+          "std": 0.0065,
+          "min": 0.7663,
+          "max": 0.786,
+          "per_fold": [
+            0.772,
+            0.7663,
+            0.7775,
+            0.774,
+            0.786
+          ]
+        },
+        "recall_macro": {
+          "mean": 0.7753,
+          "std": 0.0065,
+          "min": 0.7665,
+          "max": 0.786,
+          "per_fold": [
+            0.7721,
+            0.7665,
+            0.7777,
+            0.7743,
+            0.786
+          ]
+        },
+        "f1_macro": {
+          "mean": 0.7751,
+          "std": 0.0066,
+          "min": 0.7661,
+          "max": 0.786,
+          "per_fold": [
+            0.772,
+            0.7661,
+            0.7773,
+            0.7739,
+            0.786
+          ]
+        },
+        "f1_weighted": {
+          "mean": 0.7752,
+          "std": 0.0066,
+          "min": 0.7662,
+          "max": 0.7862,
+          "per_fold": [
+            0.7722,
+            0.7662,
+            0.7774,
+            0.774,
+            0.7862
+          ]
+        }
+      },
+      "test_aggregate": {
+        "accuracy": {
+          "mean": 0.7624,
+          "std": 0.005,
+          "min": 0.7577,
+          "max": 0.7702,
+          "per_fold": [
+            0.7702,
+            0.7663,
+            0.7596,
+            0.7582,
+            0.7577
+          ]
+        },
+        "precision_binary": {
+          "mean": 0.7875,
+          "std": 0.005,
+          "min": 0.7824,
+          "max": 0.7964,
+          "per_fold": [
+            0.7894,
+            0.7964,
+            0.7843,
+            0.7848,
+            0.7824
+          ]
+        },
+        "recall_binary": {
+          "mean": 0.743,
+          "std": 0.0087,
+          "min": 0.7361,
+          "max": 0.7602,
+          "per_fold": [
+            0.7602,
+            0.7389,
+            0.7407,
+            0.7361,
+            0.7389
+          ]
+        },
+        "f1_binary": {
+          "mean": 0.7645,
+          "std": 0.0056,
+          "min": 0.7597,
+          "max": 0.7745,
+          "per_fold": [
+            0.7745,
+            0.7666,
+            0.7619,
+            0.7597,
+            0.76
+          ]
+        },
+        "precision_macro": {
+          "mean": 0.7629,
+          "std": 0.0049,
+          "min": 0.7582,
+          "max": 0.7702,
+          "per_fold": [
+            0.7702,
+            0.7674,
+            0.7601,
+            0.7588,
+            0.7582
+          ]
+        },
+        "recall_macro": {
+          "mean": 0.7632,
+          "std": 0.0049,
+          "min": 0.7584,
+          "max": 0.7706,
+          "per_fold": [
+            0.7706,
+            0.7674,
+            0.7604,
+            0.7591,
+            0.7584
+          ]
+        },
+        "f1_macro": {
+          "mean": 0.7624,
+          "std": 0.0049,
+          "min": 0.7577,
+          "max": 0.7701,
+          "per_fold": [
+            0.7701,
+            0.7663,
+            0.7596,
+            0.7582,
+            0.7577
+          ]
+        },
+        "f1_weighted": {
+          "mean": 0.7625,
+          "std": 0.005,
+          "min": 0.7578,
+          "max": 0.7703,
+          "per_fold": [
+            0.7703,
+            0.7664,
+            0.7597,
+            0.7582,
+            0.7578
+          ]
+        }
+      }
+    },
+    "Cosine Similarity": {
+      "feature_type": "XLM-R Embed",
+      "validation_per_fold": [
+        {
+          "accuracy": 0.5716,
+          "precision_binary": 0.5814,
+          "recall_binary": 0.5977,
+          "f1_binary": 0.5895,
+          "precision_macro": 0.571,
+          "recall_macro": 0.5708,
+          "f1_macro": 0.5708,
+          "f1_weighted": 0.5714,
+          "confusion_matrix": [
+            [
+              1318,
+              1105
+            ],
+            [
+              1033,
+              1535
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.5709,
+          "precision_binary": 0.5804,
+          "recall_binary": 0.5991,
+          "f1_binary": 0.5896,
+          "precision_macro": 0.5703,
+          "recall_macro": 0.5701,
+          "f1_macro": 0.5701,
+          "f1_weighted": 0.5706,
+          "confusion_matrix": [
+            [
+              1311,
+              1112
+            ],
+            [
+              1029,
+              1538
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.5649,
+          "precision_binary": 0.5752,
+          "recall_binary": 0.5902,
+          "f1_binary": 0.5826,
+          "precision_macro": 0.5643,
+          "recall_macro": 0.5642,
+          "f1_macro": 0.5642,
+          "f1_weighted": 0.5647,
+          "confusion_matrix": [
+            [
+              1304,
+              1119
+            ],
+            [
+              1052,
+              1515
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.5926,
+          "precision_binary": 0.6062,
+          "recall_binary": 0.5946,
+          "f1_binary": 0.6004,
+          "precision_macro": 0.5925,
+          "recall_macro": 0.5925,
+          "f1_macro": 0.5924,
+          "f1_weighted": 0.5927,
+          "confusion_matrix": [
+            [
+              1430,
+              992
+            ],
+            [
+              1041,
+              1527
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.5824,
+          "precision_binary": 0.597,
+          "recall_binary": 0.5798,
+          "f1_binary": 0.5883,
+          "precision_macro": 0.5824,
+          "recall_macro": 0.5824,
+          "f1_macro": 0.5823,
+          "f1_weighted": 0.5825,
+          "confusion_matrix": [
+            [
+              1417,
+              1005
+            ],
+            [
+              1079,
+              1489
+            ]
+          ]
+        }
+      ],
+      "test_per_fold": [
+        {
+          "accuracy": 0.5716,
+          "precision_binary": 0.5668,
+          "recall_binary": 0.7426,
+          "f1_binary": 0.6429,
+          "precision_macro": 0.5744,
+          "recall_macro": 0.5648,
+          "f1_macro": 0.5539,
+          "f1_weighted": 0.5573,
+          "confusion_matrix": [
+            [
+              387,
+              613
+            ],
+            [
+              278,
+              802
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.5687,
+          "precision_binary": 0.5645,
+          "recall_binary": 0.7417,
+          "f1_binary": 0.6411,
+          "precision_macro": 0.5712,
+          "recall_macro": 0.5618,
+          "f1_macro": 0.5505,
+          "f1_weighted": 0.554,
+          "confusion_matrix": [
+            [
+              382,
+              618
+            ],
+            [
+              279,
+              801
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.5697,
+          "precision_binary": 0.5652,
+          "recall_binary": 0.7426,
+          "f1_binary": 0.6419,
+          "precision_macro": 0.5723,
+          "recall_macro": 0.5628,
+          "f1_macro": 0.5515,
+          "f1_weighted": 0.555,
+          "confusion_matrix": [
+            [
+              383,
+              617
+            ],
+            [
+              278,
+              802
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.5697,
+          "precision_binary": 0.5658,
+          "recall_binary": 0.7361,
+          "f1_binary": 0.6398,
+          "precision_macro": 0.5718,
+          "recall_macro": 0.5631,
+          "f1_macro": 0.5528,
+          "f1_weighted": 0.5561,
+          "confusion_matrix": [
+            [
+              390,
+              610
+            ],
+            [
+              285,
+              795
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.5712,
+          "precision_binary": 0.567,
+          "recall_binary": 0.7361,
+          "f1_binary": 0.6406,
+          "precision_macro": 0.5733,
+          "recall_macro": 0.5646,
+          "f1_macro": 0.5545,
+          "f1_weighted": 0.5578,
+          "confusion_matrix": [
+            [
+              393,
+              607
+            ],
+            [
+              285,
+              795
+            ]
+          ]
+        }
+      ],
+      "validation_aggregate": {
+        "accuracy": {
+          "mean": 0.5765,
+          "std": 0.0098,
+          "min": 0.5649,
+          "max": 0.5926,
+          "per_fold": [
+            0.5716,
+            0.5709,
+            0.5649,
+            0.5926,
+            0.5824
+          ]
+        },
+        "precision_binary": {
+          "mean": 0.588,
+          "std": 0.0116,
+          "min": 0.5752,
+          "max": 0.6062,
+          "per_fold": [
+            0.5814,
+            0.5804,
+            0.5752,
+            0.6062,
+            0.597
+          ]
+        },
+        "recall_binary": {
+          "mean": 0.5923,
+          "std": 0.0069,
+          "min": 0.5798,
+          "max": 0.5991,
+          "per_fold": [
+            0.5977,
+            0.5991,
+            0.5902,
+            0.5946,
+            0.5798
+          ]
+        },
+        "f1_binary": {
+          "mean": 0.5901,
+          "std": 0.0058,
+          "min": 0.5826,
+          "max": 0.6004,
+          "per_fold": [
+            0.5895,
+            0.5896,
+            0.5826,
+            0.6004,
+            0.5883
+          ]
+        },
+        "precision_macro": {
+          "mean": 0.5761,
+          "std": 0.0101,
+          "min": 0.5643,
+          "max": 0.5925,
+          "per_fold": [
+            0.571,
+            0.5703,
+            0.5643,
+            0.5925,
+            0.5824
+          ]
+        },
+        "recall_macro": {
+          "mean": 0.576,
+          "std": 0.0101,
+          "min": 0.5642,
+          "max": 0.5925,
+          "per_fold": [
+            0.5708,
+            0.5701,
+            0.5642,
+            0.5925,
+            0.5824
+          ]
+        },
+        "f1_macro": {
+          "mean": 0.576,
+          "std": 0.0101,
+          "min": 0.5642,
+          "max": 0.5924,
+          "per_fold": [
+            0.5708,
+            0.5701,
+            0.5642,
+            0.5924,
+            0.5823
+          ]
+        },
+        "f1_weighted": {
+          "mean": 0.5764,
+          "std": 0.01,
+          "min": 0.5647,
+          "max": 0.5927,
+          "per_fold": [
+            0.5714,
+            0.5706,
+            0.5647,
+            0.5927,
+            0.5825
+          ]
+        }
+      },
+      "test_aggregate": {
+        "accuracy": {
+          "mean": 0.5702,
+          "std": 0.0011,
+          "min": 0.5687,
+          "max": 0.5716,
+          "per_fold": [
+            0.5716,
+            0.5687,
+            0.5697,
+            0.5697,
+            0.5712
+          ]
+        },
+        "precision_binary": {
+          "mean": 0.5659,
+          "std": 0.0009,
+          "min": 0.5645,
+          "max": 0.567,
+          "per_fold": [
+            0.5668,
+            0.5645,
+            0.5652,
+            0.5658,
+            0.567
+          ]
+        },
+        "recall_binary": {
+          "mean": 0.7398,
+          "std": 0.0031,
+          "min": 0.7361,
+          "max": 0.7426,
+          "per_fold": [
+            0.7426,
+            0.7417,
+            0.7426,
+            0.7361,
+            0.7361
+          ]
+        },
+        "f1_binary": {
+          "mean": 0.6413,
+          "std": 0.0011,
+          "min": 0.6398,
+          "max": 0.6429,
+          "per_fold": [
+            0.6429,
+            0.6411,
+            0.6419,
+            0.6398,
+            0.6406
+          ]
+        },
+        "precision_macro": {
+          "mean": 0.5726,
+          "std": 0.0011,
+          "min": 0.5712,
+          "max": 0.5744,
+          "per_fold": [
+            0.5744,
+            0.5712,
+            0.5723,
+            0.5718,
+            0.5733
+          ]
+        },
+        "recall_macro": {
+          "mean": 0.5634,
+          "std": 0.0011,
+          "min": 0.5618,
+          "max": 0.5648,
+          "per_fold": [
+            0.5648,
+            0.5618,
+            0.5628,
+            0.5631,
+            0.5646
+          ]
+        },
+        "f1_macro": {
+          "mean": 0.5526,
+          "std": 0.0015,
+          "min": 0.5505,
+          "max": 0.5545,
+          "per_fold": [
+            0.5539,
+            0.5505,
+            0.5515,
+            0.5528,
+            0.5545
+          ]
+        },
+        "f1_weighted": {
+          "mean": 0.556,
+          "std": 0.0014,
+          "min": 0.554,
+          "max": 0.5578,
+          "per_fold": [
+            0.5573,
+            0.554,
+            0.555,
+            0.5561,
+            0.5578
+          ]
+        }
+      }
+    },
+    "XLM-RoBERTa (fine-tuned)": {
+      "feature_type": "Transformer",
+      "validation_per_fold": [
+        {
+          "accuracy": 0.8217,
+          "precision_binary": 0.8543,
+          "recall_binary": 0.7878,
+          "f1_binary": 0.8197,
+          "precision_macro": 0.8233,
+          "recall_macro": 0.8227,
+          "f1_macro": 0.8217,
+          "f1_weighted": 0.8216,
+          "confusion_matrix": [
+            [
+              2078,
+              345
+            ],
+            [
+              545,
+              2023
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.816,
+          "precision_binary": 0.8383,
+          "recall_binary": 0.7959,
+          "f1_binary": 0.8165,
+          "precision_macro": 0.8165,
+          "recall_macro": 0.8166,
+          "f1_macro": 0.816,
+          "f1_weighted": 0.816,
+          "confusion_matrix": [
+            [
+              2029,
+              394
+            ],
+            [
+              524,
+              2043
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.8277,
+          "precision_binary": 0.8335,
+          "recall_binary": 0.8309,
+          "f1_binary": 0.8322,
+          "precision_macro": 0.8275,
+          "recall_macro": 0.8276,
+          "f1_macro": 0.8275,
+          "f1_weighted": 0.8277,
+          "confusion_matrix": [
+            [
+              1997,
+              426
+            ],
+            [
+              434,
+              2133
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.823,
+          "precision_binary": 0.8321,
+          "recall_binary": 0.822,
+          "f1_binary": 0.827,
+          "precision_macro": 0.8229,
+          "recall_macro": 0.8231,
+          "f1_macro": 0.823,
+          "f1_weighted": 0.8231,
+          "confusion_matrix": [
+            [
+              1996,
+              426
+            ],
+            [
+              457,
+              2111
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.8257,
+          "precision_binary": 0.8353,
+          "recall_binary": 0.8236,
+          "f1_binary": 0.8294,
+          "precision_macro": 0.8255,
+          "recall_macro": 0.8257,
+          "f1_macro": 0.8256,
+          "f1_weighted": 0.8257,
+          "confusion_matrix": [
+            [
+              2005,
+              417
+            ],
+            [
+              453,
+              2115
+            ]
+          ]
+        }
+      ],
+      "test_per_fold": [
+        {
+          "accuracy": 0.8159,
+          "precision_binary": 0.84,
+          "recall_binary": 0.7972,
+          "f1_binary": 0.8181,
+          "precision_macro": 0.8162,
+          "recall_macro": 0.8166,
+          "f1_macro": 0.8158,
+          "f1_weighted": 0.8159,
+          "confusion_matrix": [
+            [
+              836,
+              164
+            ],
+            [
+              219,
+              861
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.8173,
+          "precision_binary": 0.8359,
+          "recall_binary": 0.8065,
+          "f1_binary": 0.8209,
+          "precision_macro": 0.8173,
+          "recall_macro": 0.8177,
+          "f1_macro": 0.8172,
+          "f1_weighted": 0.8174,
+          "confusion_matrix": [
+            [
+              829,
+              171
+            ],
+            [
+              209,
+              871
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.8264,
+          "precision_binary": 0.8382,
+          "recall_binary": 0.825,
+          "f1_binary": 0.8315,
+          "precision_macro": 0.8262,
+          "recall_macro": 0.8265,
+          "f1_macro": 0.8263,
+          "f1_weighted": 0.8265,
+          "confusion_matrix": [
+            [
+              828,
+              172
+            ],
+            [
+              189,
+              891
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.8173,
+          "precision_binary": 0.8259,
+          "recall_binary": 0.8213,
+          "f1_binary": 0.8236,
+          "precision_macro": 0.817,
+          "recall_macro": 0.8171,
+          "f1_macro": 0.8171,
+          "f1_weighted": 0.8173,
+          "confusion_matrix": [
+            [
+              813,
+              187
+            ],
+            [
+              193,
+              887
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.8125,
+          "precision_binary": 0.8194,
+          "recall_binary": 0.8194,
+          "f1_binary": 0.8194,
+          "precision_macro": 0.8122,
+          "recall_macro": 0.8122,
+          "f1_macro": 0.8122,
+          "f1_weighted": 0.8125,
+          "confusion_matrix": [
+            [
+              805,
+              195
+            ],
+            [
+              195,
+              885
+            ]
+          ]
+        }
+      ],
+      "validation_aggregate": {
+        "accuracy": {
+          "mean": 0.8228,
+          "std": 0.004,
+          "min": 0.816,
+          "max": 0.8277,
+          "per_fold": [
+            0.8217,
+            0.816,
+            0.8277,
+            0.823,
+            0.8257
+          ]
+        },
+        "precision_binary": {
+          "mean": 0.8387,
+          "std": 0.0081,
+          "min": 0.8321,
+          "max": 0.8543,
+          "per_fold": [
+            0.8543,
+            0.8383,
+            0.8335,
+            0.8321,
+            0.8353
+          ]
+        },
+        "recall_binary": {
+          "mean": 0.812,
+          "std": 0.017,
+          "min": 0.7878,
+          "max": 0.8309,
+          "per_fold": [
+            0.7878,
+            0.7959,
+            0.8309,
+            0.822,
+            0.8236
+          ]
+        },
+        "f1_binary": {
+          "mean": 0.825,
+          "std": 0.0059,
+          "min": 0.8165,
+          "max": 0.8322,
+          "per_fold": [
+            0.8197,
+            0.8165,
+            0.8322,
+            0.827,
+            0.8294
+          ]
+        },
+        "precision_macro": {
+          "mean": 0.8231,
+          "std": 0.0037,
+          "min": 0.8165,
+          "max": 0.8275,
+          "per_fold": [
+            0.8233,
+            0.8165,
+            0.8275,
+            0.8229,
+            0.8255
+          ]
+        },
+        "recall_macro": {
+          "mean": 0.8231,
+          "std": 0.0037,
+          "min": 0.8166,
+          "max": 0.8276,
+          "per_fold": [
+            0.8227,
+            0.8166,
+            0.8276,
+            0.8231,
+            0.8257
+          ]
+        },
+        "f1_macro": {
+          "mean": 0.8228,
+          "std": 0.0039,
+          "min": 0.816,
+          "max": 0.8275,
+          "per_fold": [
+            0.8217,
+            0.816,
+            0.8275,
+            0.823,
+            0.8256
+          ]
+        },
+        "f1_weighted": {
+          "mean": 0.8228,
+          "std": 0.004,
+          "min": 0.816,
+          "max": 0.8277,
+          "per_fold": [
+            0.8216,
+            0.816,
+            0.8277,
+            0.8231,
+            0.8257
+          ]
+        }
+      },
+      "test_aggregate": {
+        "accuracy": {
+          "mean": 0.8179,
+          "std": 0.0046,
+          "min": 0.8125,
+          "max": 0.8264,
+          "per_fold": [
+            0.8159,
+            0.8173,
+            0.8264,
+            0.8173,
+            0.8125
+          ]
+        },
+        "precision_binary": {
+          "mean": 0.8319,
+          "std": 0.0079,
+          "min": 0.8194,
+          "max": 0.84,
+          "per_fold": [
+            0.84,
+            0.8359,
+            0.8382,
+            0.8259,
+            0.8194
+          ]
+        },
+        "recall_binary": {
+          "mean": 0.8139,
+          "std": 0.0104,
+          "min": 0.7972,
+          "max": 0.825,
+          "per_fold": [
+            0.7972,
+            0.8065,
+            0.825,
+            0.8213,
+            0.8194
+          ]
+        },
+        "f1_binary": {
+          "mean": 0.8227,
+          "std": 0.0048,
+          "min": 0.8181,
+          "max": 0.8315,
+          "per_fold": [
+            0.8181,
+            0.8209,
+            0.8315,
+            0.8236,
+            0.8194
+          ]
+        },
+        "precision_macro": {
+          "mean": 0.8178,
+          "std": 0.0046,
+          "min": 0.8122,
+          "max": 0.8262,
+          "per_fold": [
+            0.8162,
+            0.8173,
+            0.8262,
+            0.817,
+            0.8122
+          ]
+        },
+        "recall_macro": {
+          "mean": 0.818,
+          "std": 0.0047,
+          "min": 0.8122,
+          "max": 0.8265,
+          "per_fold": [
+            0.8166,
+            0.8177,
+            0.8265,
+            0.8171,
+            0.8122
+          ]
+        },
+        "f1_macro": {
+          "mean": 0.8177,
+          "std": 0.0047,
+          "min": 0.8122,
+          "max": 0.8263,
+          "per_fold": [
+            0.8158,
+            0.8172,
+            0.8263,
+            0.8171,
+            0.8122
+          ]
+        },
+        "f1_weighted": {
+          "mean": 0.8179,
+          "std": 0.0046,
+          "min": 0.8125,
+          "max": 0.8265,
+          "per_fold": [
+            0.8159,
+            0.8174,
+            0.8265,
+            0.8173,
+            0.8125
+          ]
+        }
+      }
+    }
+  }
+}
