@@ -69,7 +69,7 @@ Cyberbullying Detection/
 
 ```bash
 # Clone repository
-git clone https://github.com/<USERNAME>/<REPO_NAME>.git
+git clone https://github.com/joewin786/bilingual-cyberbullying-moderation-system.git
 cd "Cyberbullying Detection"
 
 # Buat virtual environment (opsional tetapi direkomendasikan)
